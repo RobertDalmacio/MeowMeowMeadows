@@ -39,7 +39,7 @@ public class JoystickMove : MonoBehaviour
         {
             if (direction.magnitude > 0)
             {
-                // transistions animation to running state
+                // transitions animation to running state
                 animator.SetBool("isMoving", true);
                 // updates animation based on direction
                 animator.SetFloat("horizontal", direction.x);
@@ -47,7 +47,7 @@ public class JoystickMove : MonoBehaviour
             }
             else
             {
-                // transistions animation to idle state
+                // transitions animation to idle state
                 animator.SetBool("isMoving", false);
             }
         }
