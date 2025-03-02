@@ -46,6 +46,9 @@ TagManager:
   - name: Land
     uniqueID: 2513183293
     locked: 0
+  - name: Hill
+    uniqueID: 2348347121
+    locked: 0
   - name: Plants
     uniqueID: 2221643153
     locked: 0
