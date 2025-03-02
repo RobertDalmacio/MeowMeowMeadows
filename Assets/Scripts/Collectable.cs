@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    //player walks into collectable
+    //add collectable to player
+    //delete collectable from screen
+    public CollectableType type;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        Player player = collision.GetComponent<Player>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (player){
+            player.inventory.Add(type);
+            Destroy(this.gameObject);
+        }
     }
+}
+
+public enum CollectableType
+{
+    NONE, WHEAT_SEED
 }
