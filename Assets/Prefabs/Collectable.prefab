@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1993409819784157497}
   - component: {fileID: 2699868379709400673}
   - component: {fileID: 7719062617308273030}
+  - component: {fileID: 7587287007351113225}
+  - component: {fileID: 5977226121013439300}
   m_Layer: 0
   m_Name: Collectable
   m_TagString: Untagged
@@ -101,7 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a156a904a9a714fa7af1c4b4728a92ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
 --- !u!61 &7719062617308273030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148,3 +149,44 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.875, y: 0.9375}
   m_EdgeRadius: 0
+--- !u!50 &7587287007351113225
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714860470145542821}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 3
+  m_LinearDamping: 0.2
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &5977226121013439300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4714860470145542821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64687f0f2878443be8a952d700515266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 0}
+  rb2d: {fileID: 0}

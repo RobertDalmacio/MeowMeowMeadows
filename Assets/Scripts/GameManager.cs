@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 
     public TileManager tileManager;
 
+    public itemManager item_Manager;
+
     private void Awake()
     {
         if(instance !=null && instance != this)
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
 
+        item_Manager = GetComponent<itemManager>();
         tileManager = GetComponent<TileManager>();
     }
 }
