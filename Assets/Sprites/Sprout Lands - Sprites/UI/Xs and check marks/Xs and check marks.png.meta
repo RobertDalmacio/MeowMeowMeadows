@@ -172,6 +172,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -672,7 +685,29 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Xs and check marks_0: 4163271893700307078
+      Xs and check marks_1: -8734689179654892489
+      Xs and check marks_10: 6622516263859967385
+      Xs and check marks_11: 7140790888876786228
+      Xs and check marks_12: -2252035804872741929
+      Xs and check marks_13: 2739579442460365454
+      Xs and check marks_14: -6985093636524360828
+      Xs and check marks_15: -5127598699218000384
+      Xs and check marks_16: -4509728979068142573
+      Xs and check marks_17: -5186909611068875852
+      Xs and check marks_18: -9197981655316950962
+      Xs and check marks_19: 1664169795757381291
+      Xs and check marks_2: 4660374153984863117
+      Xs and check marks_20: -3462189853329864958
+      Xs and check marks_21: -4617843912998017806
+      Xs and check marks_3: -1592005976323046368
+      Xs and check marks_4: 1982740995642395394
+      Xs and check marks_5: -8211593236238638586
+      Xs and check marks_6: 4074803824382546336
+      Xs and check marks_7: -3194015686855893147
+      Xs and check marks_8: 893277590179100169
+      Xs and check marks_9: 1956143535889593429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
