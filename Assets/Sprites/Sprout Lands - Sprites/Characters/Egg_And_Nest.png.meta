@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,10 +57,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,10 +151,10 @@ TextureImporter:
       name: Egg_And_Nest_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 10
-        height: 10
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,10 +173,10 @@ TextureImporter:
       name: Egg_And_Nest_1
       rect:
         serializedVersion: 2
-        x: 20
-        y: 3
-        width: 8
-        height: 7
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +195,10 @@ TextureImporter:
       name: Egg_And_Nest_2
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 14
-        height: 11
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +217,10 @@ TextureImporter:
       name: Egg_And_Nest_3
       rect:
         serializedVersion: 2
-        x: 49
+        x: 48
         y: 0
-        width: 14
-        height: 9
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5bd95ff66d2e98041b8fe6cc4d622824
     internalID: 0
     vertices: []
     indices: 
@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Egg_And_Nest_0: 6373942132520359487
+      Egg_And_Nest_1: 765105606590446433
+      Egg_And_Nest_2: 4338608209347774417
+      Egg_And_Nest_3: -744197992327247199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

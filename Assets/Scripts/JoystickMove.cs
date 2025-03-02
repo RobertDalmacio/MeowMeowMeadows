@@ -1,7 +1,10 @@
 using UnityEngine;
 
-public class JoystickMove : MonoBehaviour
-{
+public class JoystickMove : MonoBehaviour {
+
+    public const string landTag = "Island";
+    public bool isMoving = true; 
+    
     public float playerSpeed;
     
     public Joystick movementJoystick;
@@ -17,7 +20,7 @@ public class JoystickMove : MonoBehaviour
     private void FixedUpdate()
     {
         // player moving joystick
-        if (movementJoystick.Direction.magnitude > 0)
+        if (isMoving && movementJoystick.Direction.magnitude > 0)
         {
             Vector2 direction = new Vector2(movementJoystick.Direction.x * playerSpeed, movementJoystick.Direction.y * playerSpeed);
             rb.linearVelocity = direction;
@@ -51,5 +54,13 @@ public class JoystickMove : MonoBehaviour
                 animator.SetBool("isMoving", false);
             }
         }
+    }
+
+    void OnCollisionEnter2D(Collision2D other) {
+        Debug.Log("Collided with: " + other.gameObject.name);
+
+    }
+
+    void OnCollisionExit2D(Collision2D other) {
     }
 }
