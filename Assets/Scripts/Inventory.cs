@@ -1,16 +1,72 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
-public class Inventory : MonoBehaviour
+[System.Serializable]
+public class Inventory
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [System.Serializable]
+   public class Slot
+   {
+        public CollectableType type;
+        public int count;
+        public int maxAllowed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public Slot()
+        {
+            type = CollectableType.NONE;
+            count = 0;
+            maxAllowed = 99;
+        }
+
+        public bool CanAddItem()
+        {
+            if(count<maxAllowed)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void AddItem(CollectableType type)
+        {
+            this.type=type;
+            count++;
+        }
+   }
+
+   public List<Slot> slots = new List<Slot>();
+
+   public Inventory(int numSlots)
+   {
+        for (int i = 0; i < numSlots; i++)
+        {
+            Slot slot = new Slot();
+            slots.Add(slot);
+        }
+   }
+
+   public void Add(CollectableType typeToAdd)
+   {
+        //check if others exist in a slot
+        foreach(Slot slot in slots)
+        {
+            if (slot.type == typeToAdd && slot.CanAddItem())
+            {
+                slot.AddItem(typeToAdd);
+                return;
+            }
+        }
+
+        //add to empty slot if there is one
+        foreach(Slot slot in slots)
+        {
+            if(slot.type == CollectableType.NONE)
+            {
+                slot.AddItem(typeToAdd);
+                return;
+            }
+        }
+   }
 }
+
