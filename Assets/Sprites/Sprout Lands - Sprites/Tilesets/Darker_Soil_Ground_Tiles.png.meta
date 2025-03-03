@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 04f7b0e1c5474419f885caa24ff71e87
+guid: 931edc0105029f743bf74d79149dacac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9009122782068828098
-    second: Tilled_Dirt_v2_0
+      213: -7656601307950018570
+    second: Darker_Soil_Ground_Tiles_0
   - first:
-      213: 8250113561976565155
-    second: Tilled_Dirt_v2_1
+      213: -2467508579294491858
+    second: Darker_Soil_Ground_Tiles_1
   - first:
-      213: 108147797129954678
-    second: Tilled_Dirt_v2_2
+      213: -2305759826824698848
+    second: Darker_Soil_Ground_Tiles_2
   - first:
-      213: -4495645276589438192
-    second: Tilled_Dirt_v2_3
+      213: -294753746977984746
+    second: Darker_Soil_Ground_Tiles_3
   - first:
-      213: 5402770949762578983
-    second: Tilled_Dirt_v2_4
+      213: 8482409997851149542
+    second: Darker_Soil_Ground_Tiles_4
   - first:
-      213: 6028307249471186290
-    second: Tilled_Dirt_v2_5
+      213: 3561780242273141937
+    second: Darker_Soil_Ground_Tiles_5
   - first:
-      213: 8850265302900506954
-    second: Tilled_Dirt_v2_6
+      213: -7920252401444689590
+    second: Darker_Soil_Ground_Tiles_6
   - first:
-      213: 2914915493722732773
-    second: Tilled_Dirt_v2_7
+      213: 2464014838581305815
+    second: Darker_Soil_Ground_Tiles_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,37 +130,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_0
+      name: Darker_Soil_Ground_Tiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -175,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3898e4ef8a29f280800000000000000
-      internalID: -9009122782068828098
+      spriteID: 6ff09d44da94eb590800000000000000
+      internalID: -7656601307950018570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_1
+      name: Darker_Soil_Ground_Tiles_1
       rect:
         serializedVersion: 2
         x: 16
@@ -197,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3adee3ad29a4e7270800000000000000
-      internalID: 8250113561976565155
+      spriteID: e2b4ce24506a1cdd0800000000000000
+      internalID: -2467508579294491858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_2
+      name: Darker_Soil_Ground_Tiles_2
       rect:
         serializedVersion: 2
         x: 32
@@ -219,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6750c2739d7308100800000000000000
-      internalID: 108147797129954678
+      spriteID: 0246fb867ab4000e0800000000000000
+      internalID: -2305759826824698848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_3
+      name: Darker_Soil_Ground_Tiles_3
       rect:
         serializedVersion: 2
         x: 48
@@ -241,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01b49bc90724c91c0800000000000000
-      internalID: -4495645276589438192
+      spriteID: 61f692f5703d8ebf0800000000000000
+      internalID: -294753746977984746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_4
+      name: Darker_Soil_Ground_Tiles_4
       rect:
         serializedVersion: 2
         x: 64
@@ -263,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72af56fbd8f7afa40800000000000000
-      internalID: 5402770949762578983
+      spriteID: 6e4c32983f297b570800000000000000
+      internalID: 8482409997851149542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_5
+      name: Darker_Soil_Ground_Tiles_5
       rect:
         serializedVersion: 2
         x: 80
@@ -285,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27564a90189d8a350800000000000000
-      internalID: 6028307249471186290
+      spriteID: 1b402bc524cfd6130800000000000000
+      internalID: 3561780242273141937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_6
+      name: Darker_Soil_Ground_Tiles_6
       rect:
         serializedVersion: 2
         x: 96
@@ -307,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a41895bf66572da70800000000000000
-      internalID: 8850265302900506954
+      spriteID: a496478776c951290800000000000000
+      internalID: -7920252401444689590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_7
+      name: Darker_Soil_Ground_Tiles_7
       rect:
         serializedVersion: 2
         x: 112
@@ -329,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e830a9923cd37820800000000000000
-      internalID: 2914915493722732773
+      spriteID: 7d12ee6d070f13220800000000000000
+      internalID: 2464014838581305815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_8
+      name: Darker_Soil_Ground_Tiles_8
       rect:
         serializedVersion: 2
         x: 128
@@ -351,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08eff05deab13343afe6bf7dc00f4cb
-      internalID: 1831047206
+      spriteID: 40ee0711515dc3746875d824feb92ad7
+      internalID: -1528780864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_9
+      name: Darker_Soil_Ground_Tiles_9
       rect:
         serializedVersion: 2
         x: 144
@@ -373,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b78ede73e0254b141b01e5d600216db7
-      internalID: 216946780
+      spriteID: 5a702034f6737064fb0452a3348052d0
+      internalID: 844643638
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_10
+      name: Darker_Soil_Ground_Tiles_10
       rect:
         serializedVersion: 2
         x: 0
@@ -395,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e44b2b2e42025f644ab3b949b9bc8743
-      internalID: 565787693
+      spriteID: 4a47166ad63f0374490bca311b1ea021
+      internalID: 480433932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_11
+      name: Darker_Soil_Ground_Tiles_11
       rect:
         serializedVersion: 2
         x: 16
@@ -417,14 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b1af8b3d92d3ef47b067a91824ce241
-      internalID: -126736754
+      spriteID: 470da3244d8af3e40bbaef49ae75f847
+      internalID: -1016970198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_12
+      name: Darker_Soil_Ground_Tiles_12
       rect:
         serializedVersion: 2
         x: 32
@@ -439,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8e663c0c55953a47bbde2aed00952fe
-      internalID: 663496752
+      spriteID: 70dfbee85dec83f46be94378f8086fad
+      internalID: -1688321905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_13
+      name: Darker_Soil_Ground_Tiles_13
       rect:
         serializedVersion: 2
         x: 48
@@ -461,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb4cbed823e2ab4fabe49870300cb14
-      internalID: 1808280786
+      spriteID: 09ff845225e2ff74c8d63978057dbe20
+      internalID: -129337906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_14
+      name: Darker_Soil_Ground_Tiles_14
       rect:
         serializedVersion: 2
         x: 64
@@ -483,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89650e25da2b9cf4394db9f1c52b35ac
-      internalID: -1157816250
+      spriteID: f021f5bc2624cef4cb050fc357157830
+      internalID: 1323430824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_15
+      name: Darker_Soil_Ground_Tiles_15
       rect:
         serializedVersion: 2
         x: 80
@@ -505,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cc722bbf7a65914e9ecc9e70962bec2
-      internalID: -718804275
+      spriteID: e47c5eeb20c2d8b40a3f1238357289e0
+      internalID: 2134397607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_16
+      name: Darker_Soil_Ground_Tiles_16
       rect:
         serializedVersion: 2
         x: 96
@@ -527,14 +501,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc9c9fd46ec8a2849943721b91094a0a
-      internalID: -1758176703
+      spriteID: 5484697411f499c4f9a5fb00217989a4
+      internalID: 1054545809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_17
+      name: Darker_Soil_Ground_Tiles_17
       rect:
         serializedVersion: 2
         x: 112
@@ -549,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c03e435acaa01748a7c4f5f38d4c04a
-      internalID: -610704479
+      spriteID: 5e0241864ea98bd4589b828096342c2a
+      internalID: -196851107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_18
+      name: Darker_Soil_Ground_Tiles_18
       rect:
         serializedVersion: 2
         x: 128
@@ -571,14 +545,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc30a39d978bcae4da508aea409518fe
-      internalID: -1245549325
+      spriteID: 9ed53012c7511cc4eb3839132896104a
+      internalID: -1702896083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_19
+      name: Darker_Soil_Ground_Tiles_19
       rect:
         serializedVersion: 2
         x: 144
@@ -593,14 +567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7d9295a3e109ab46bba22898251e4bb
-      internalID: 967560739
+      spriteID: 92301c291edf71e4ba1a72c3488e5213
+      internalID: 1892120839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_20
+      name: Darker_Soil_Ground_Tiles_20
       rect:
         serializedVersion: 2
         x: 0
@@ -615,14 +589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da17a97f51ed3cb468211519af304844
-      internalID: -130845736
+      spriteID: e74da869a44f0a14682dcfde5043638d
+      internalID: -81960585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_21
+      name: Darker_Soil_Ground_Tiles_21
       rect:
         serializedVersion: 2
         x: 16
@@ -637,14 +611,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 951b9ba56177b1241ab1dae61eebd315
-      internalID: 2083493695
+      spriteID: beec1169b65ad9f49a80c9d7106a8326
+      internalID: 2092052088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_22
+      name: Darker_Soil_Ground_Tiles_22
       rect:
         serializedVersion: 2
         x: 32
@@ -659,14 +633,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b16c036dd1fb14b47b315e657c47bca0
-      internalID: 1190260942
+      spriteID: 2de8dde3d7400d145b33d2b97f65c86f
+      internalID: -1059784271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_23
+      name: Darker_Soil_Ground_Tiles_23
       rect:
         serializedVersion: 2
         x: 48
@@ -681,14 +655,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b61a0d5a8e2624445aba8254f1fdb93f
-      internalID: -1337114759
+      spriteID: bde81ad69b75f6c47ac96808d60f5b98
+      internalID: -819253928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_24
+      name: Darker_Soil_Ground_Tiles_24
       rect:
         serializedVersion: 2
         x: 64
@@ -703,14 +677,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ff5d84671786b649b8c902bab413ec4
-      internalID: 701557164
+      spriteID: 18fbf7a05aa341148893273df41e70a5
+      internalID: 698198351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_25
+      name: Darker_Soil_Ground_Tiles_25
       rect:
         serializedVersion: 2
         x: 80
@@ -725,14 +699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd0527d1ff21a884d8257f7b6872e577
-      internalID: -1733232753
+      spriteID: 68f2f991adb98614492703706d7dd93c
+      internalID: 880228998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_26
+      name: Darker_Soil_Ground_Tiles_26
       rect:
         serializedVersion: 2
         x: 96
@@ -747,14 +721,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1949be8202f1cc140af2f160e3b2bd11
-      internalID: -1120935653
+      spriteID: 912c91901b541c64ea5fcee6bc19f704
+      internalID: 763670025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_27
+      name: Darker_Soil_Ground_Tiles_27
       rect:
         serializedVersion: 2
         x: 112
@@ -769,14 +743,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81653b29ba681c41ab10cecd5ea17fa
-      internalID: 1818546016
+      spriteID: 270cb6d157fb032478c09d12080d86c8
+      internalID: -124042588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_28
+      name: Darker_Soil_Ground_Tiles_28
       rect:
         serializedVersion: 2
         x: 128
@@ -791,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c99d30d5c59a6447a893194cd10c3f5
-      internalID: 966390181
+      spriteID: 804d6ed872e781846a3dd5a08d0f7bb2
+      internalID: 365400249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_29
+      name: Darker_Soil_Ground_Tiles_29
       rect:
         serializedVersion: 2
         x: 144
@@ -813,14 +787,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54c81d283ea784242a075022a6c65319
-      internalID: -1855814254
+      spriteID: d9813e76f9cbfc94591266ca788bf6ba
+      internalID: -841315848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_30
+      name: Darker_Soil_Ground_Tiles_30
       rect:
         serializedVersion: 2
         x: 160
@@ -835,14 +809,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2b45964c86ba8c4295b522073ed97d5
-      internalID: -1360953021
+      spriteID: 2fd034084012bcf49ba4537d22df79b1
+      internalID: 716734625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_31
+      name: Darker_Soil_Ground_Tiles_31
       rect:
         serializedVersion: 2
         x: 0
@@ -857,14 +831,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 823fd4db9aa84ae45b2de9fe3e769d68
-      internalID: 195661019
+      spriteID: 39d050abbeffbf548beec9e9b58f0cd0
+      internalID: 1333116063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_32
+      name: Darker_Soil_Ground_Tiles_32
       rect:
         serializedVersion: 2
         x: 16
@@ -879,14 +853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a27bb03f01a75243b4b47d8d63f698e
-      internalID: 720785944
+      spriteID: 2b7db70e4c83d554694419118dd5c67a
+      internalID: -1440105288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_33
+      name: Darker_Soil_Ground_Tiles_33
       rect:
         serializedVersion: 2
         x: 32
@@ -901,14 +875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13f6d9c0346dd3e4890b935726539e7d
-      internalID: -1517558972
+      spriteID: b43d01535948bca4787336e8aa0785b3
+      internalID: -1479708229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_34
+      name: Darker_Soil_Ground_Tiles_34
       rect:
         serializedVersion: 2
         x: 48
@@ -923,14 +897,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57b7dbed56f1da44ea268300c4007c7e
-      internalID: 1766622190
+      spriteID: 72387c8b4feb6364fba82812a7680dee
+      internalID: -2103596490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_35
+      name: Darker_Soil_Ground_Tiles_35
       rect:
         serializedVersion: 2
         x: 64
@@ -945,14 +919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d113f509041a0424498c068364dea977
-      internalID: -1623078789
+      spriteID: a33d9561812ed664ea1431093f76fe77
+      internalID: -1124171473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_36
+      name: Darker_Soil_Ground_Tiles_36
       rect:
         serializedVersion: 2
         x: 80
@@ -967,14 +941,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a169591e8d15f84eaa0ed7d97f19f75
-      internalID: -166986032
+      spriteID: 11ab1f69dabf9ae46b235654549b9eb8
+      internalID: -1556151925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_37
+      name: Darker_Soil_Ground_Tiles_37
       rect:
         serializedVersion: 2
         x: 96
@@ -989,14 +963,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 081d1156617a083498a924af19f71d5c
-      internalID: 844451386
+      spriteID: c482993680594564bb71e4b62df4966e
+      internalID: 1672794145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_38
+      name: Darker_Soil_Ground_Tiles_38
       rect:
         serializedVersion: 2
         x: 112
@@ -1011,14 +985,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ef1e005d5045f74abe9c3b7f3b8f2d1
-      internalID: 78228850
+      spriteID: ebc34f32329c793439d303cf8a14916b
+      internalID: 287306754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_39
+      name: Darker_Soil_Ground_Tiles_39
       rect:
         serializedVersion: 2
         x: 128
@@ -1033,14 +1007,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f3f9207e530cfa40800208b5aa29ac2
-      internalID: 2051037974
+      spriteID: ea23d09a13626e147a535849ef6ab188
+      internalID: 1202088210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_40
+      name: Darker_Soil_Ground_Tiles_40
       rect:
         serializedVersion: 2
         x: 144
@@ -1055,14 +1029,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 592e532ff2cda3a43a0e057aed05f33b
-      internalID: 472269727
+      spriteID: 012ba655533422d49bef40afbaf7ecb5
+      internalID: -1026212333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_41
+      name: Darker_Soil_Ground_Tiles_41
       rect:
         serializedVersion: 2
         x: 160
@@ -1077,102 +1051,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48ca3b2ccd4423243bc138f240aac266
-      internalID: -7481285
+      spriteID: 8fd691e72a147e5409b887e9480934e9
+      internalID: 108890494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_42
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed8d7497736566549994ebd2f55221da
-      internalID: 1797654283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_43
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be930e4c3a45a934e873477ab5068bd7
-      internalID: 30828529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_44
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac467a37b5ca61f4681ed40b6491f198
-      internalID: -1762809695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_45
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7af138686df7544bb5ed3c5e040e0e1
-      internalID: -1485042789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_46
+      name: Darker_Soil_Ground_Tiles_42
       rect:
         serializedVersion: 2
         x: 64
@@ -1187,14 +1073,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d33e3cea80c40214d8245143081f02c7
-      internalID: -1127532912
+      spriteID: f6e8aa3bc11fba449864c7b0bb17e21d
+      internalID: 1206988361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_47
+      name: Darker_Soil_Ground_Tiles_43
       rect:
         serializedVersion: 2
         x: 80
@@ -1209,14 +1095,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a53972e6d708ec4ab9883c70a715114
-      internalID: 1422147052
+      spriteID: 5293747eb5a24e84d969f6ee87c8314a
+      internalID: -1591371941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_48
+      name: Darker_Soil_Ground_Tiles_44
       rect:
         serializedVersion: 2
         x: 96
@@ -1231,14 +1117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7046b89233c72ec4a9f3ef60c3477c92
-      internalID: 713175318
+      spriteID: 8d5388d3daf291746bfbfbed45bb2d4c
+      internalID: 40591599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_49
+      name: Darker_Soil_Ground_Tiles_45
       rect:
         serializedVersion: 2
         x: 112
@@ -1253,14 +1139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a681b765d45754b894860dbe33e6ca
-      internalID: -875445857
+      spriteID: 82fb8f38ef8939e49a88abe5413ffcec
+      internalID: 1210330239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_50
+      name: Darker_Soil_Ground_Tiles_46
       rect:
         serializedVersion: 2
         x: 128
@@ -1275,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82bc3954d8194c04ab8963909d90ef82
-      internalID: -1522911514
+      spriteID: a7861e3cd424dd4418a09622f12d3bc0
+      internalID: 1018942421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_51
+      name: Darker_Soil_Ground_Tiles_47
       rect:
         serializedVersion: 2
         x: 0
@@ -1297,14 +1183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19616ec416b925e47a913a58fd3ec694
-      internalID: -290056080
+      spriteID: 8f6327d8e2b22794589df0cee697daca
+      internalID: 985633425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_52
+      name: Darker_Soil_Ground_Tiles_48
       rect:
         serializedVersion: 2
         x: 16
@@ -1319,14 +1205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f45fd8de23eca0a44891174539e15cc5
-      internalID: -1491895626
+      spriteID: 58960035115ae6447b36beca611073a9
+      internalID: -436529427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_53
+      name: Darker_Soil_Ground_Tiles_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1341,14 +1227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90b0d977be4470d418e42dd42f7558a8
-      internalID: 518751529
+      spriteID: c10944bb9f44a664f92883d8793aab35
+      internalID: -1708935263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_54
+      name: Darker_Soil_Ground_Tiles_50
       rect:
         serializedVersion: 2
         x: 48
@@ -1363,14 +1249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f83b98d888d3e714496209939337e0be
-      internalID: 2099733926
+      spriteID: bc0cb6d895fe0ce4a823ae564ad1f7b5
+      internalID: 1445950368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_55
+      name: Darker_Soil_Ground_Tiles_51
       rect:
         serializedVersion: 2
         x: 64
@@ -1385,124 +1271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0baaa16c64e57547924d5fa1008354b
-      internalID: -110150497
+      spriteID: 83bc36a70b903fb44b47af603e68154b
+      internalID: 1683430703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_56
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b5c5ae96dacf1a4aa66d057b8fce00c
-      internalID: -315042817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_57
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e627bba3662728d4c8a8d6568e98cfb0
-      internalID: -966180252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_58
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 065d7bcfad7086440b156b33f66c2895
-      internalID: 576046645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_59
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10b3de9c77f29894aaee818ff967ebdf
-      internalID: -1389888601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_60
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16f7327a9eaf0a040ba81082e402acb8
-      internalID: -1890174086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_61
+      name: Darker_Soil_Ground_Tiles_52
       rect:
         serializedVersion: 2
         x: 0
@@ -1517,14 +1293,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b82bf635e2df3d4f832d856a5219443
-      internalID: 1492255078
+      spriteID: d3a5bfa1c79cc0c4f8339a1f6e0e53ee
+      internalID: 701082672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_62
+      name: Darker_Soil_Ground_Tiles_53
       rect:
         serializedVersion: 2
         x: 16
@@ -1539,14 +1315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a74254ee651bccd49ad6a3ad7a8d10b9
-      internalID: -632661058
+      spriteID: 151a60ee162f6ee46bf75c7164152db9
+      internalID: -237298828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_63
+      name: Darker_Soil_Ground_Tiles_54
       rect:
         serializedVersion: 2
         x: 32
@@ -1561,14 +1337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e791c71fbcddd62409493f4a0a6a2a8e
-      internalID: -130735323
+      spriteID: 1fd9accdff5c2eb46977f229e287867e
+      internalID: 1506365042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_64
+      name: Darker_Soil_Ground_Tiles_55
       rect:
         serializedVersion: 2
         x: 48
@@ -1583,14 +1359,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 059b6fa9129c0124cb468646280e55d0
-      internalID: -758591665
+      spriteID: ff202f05e26858b42976373d7cb55b5a
+      internalID: -1984257304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilled_Dirt_v2_65
+      name: Darker_Soil_Ground_Tiles_56
       rect:
         serializedVersion: 2
         x: 64
@@ -1605,96 +1381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13f4c80a641b8bd4490b44bc0ee2405d
-      internalID: 1366480655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_66
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e69105770b63c7244b3742a606d56b37
-      internalID: -394708238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_67
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a37cb4c81f71524a88ce98bd324cc3f
-      internalID: -355454910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_68
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d706a8603b786ca4892d0f2b33be4d91
-      internalID: -222812031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tilled_Dirt_v2_69
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f28ca653a329abe41ad3021393806773
-      internalID: 462572269
+      spriteID: ff49afde6bb63114fadda0b10a50d965
+      internalID: -1376584970
       vertices: []
       indices: 
       edges: []
@@ -1703,7 +1391,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 262680b712e48904ab060546ab34bf5c
+    spriteID: dac7ed1e5f460254a9f43e80effc6c9d
     internalID: 0
     vertices: []
     indices: 
@@ -1713,76 +1401,63 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tilled_Dirt_v2_0: -9009122782068828098
-      Tilled_Dirt_v2_1: 8250113561976565155
-      Tilled_Dirt_v2_10: 565787693
-      Tilled_Dirt_v2_11: -126736754
-      Tilled_Dirt_v2_12: 663496752
-      Tilled_Dirt_v2_13: 1808280786
-      Tilled_Dirt_v2_14: -1157816250
-      Tilled_Dirt_v2_15: -718804275
-      Tilled_Dirt_v2_16: -1758176703
-      Tilled_Dirt_v2_17: -610704479
-      Tilled_Dirt_v2_18: -1245549325
-      Tilled_Dirt_v2_19: 967560739
-      Tilled_Dirt_v2_2: 108147797129954678
-      Tilled_Dirt_v2_20: -130845736
-      Tilled_Dirt_v2_21: 2083493695
-      Tilled_Dirt_v2_22: 1190260942
-      Tilled_Dirt_v2_23: -1337114759
-      Tilled_Dirt_v2_24: 701557164
-      Tilled_Dirt_v2_25: -1733232753
-      Tilled_Dirt_v2_26: -1120935653
-      Tilled_Dirt_v2_27: 1818546016
-      Tilled_Dirt_v2_28: 966390181
-      Tilled_Dirt_v2_29: -1855814254
-      Tilled_Dirt_v2_3: -4495645276589438192
-      Tilled_Dirt_v2_30: -1360953021
-      Tilled_Dirt_v2_31: 195661019
-      Tilled_Dirt_v2_32: 720785944
-      Tilled_Dirt_v2_33: -1517558972
-      Tilled_Dirt_v2_34: 1766622190
-      Tilled_Dirt_v2_35: -1623078789
-      Tilled_Dirt_v2_36: -166986032
-      Tilled_Dirt_v2_37: 844451386
-      Tilled_Dirt_v2_38: 78228850
-      Tilled_Dirt_v2_39: 2051037974
-      Tilled_Dirt_v2_4: 5402770949762578983
-      Tilled_Dirt_v2_40: 472269727
-      Tilled_Dirt_v2_41: -7481285
-      Tilled_Dirt_v2_42: 1797654283
-      Tilled_Dirt_v2_43: 30828529
-      Tilled_Dirt_v2_44: -1762809695
-      Tilled_Dirt_v2_45: -1485042789
-      Tilled_Dirt_v2_46: -1127532912
-      Tilled_Dirt_v2_47: 1422147052
-      Tilled_Dirt_v2_48: 713175318
-      Tilled_Dirt_v2_49: -875445857
-      Tilled_Dirt_v2_5: 6028307249471186290
-      Tilled_Dirt_v2_50: -1522911514
-      Tilled_Dirt_v2_51: -290056080
-      Tilled_Dirt_v2_52: -1491895626
-      Tilled_Dirt_v2_53: 518751529
-      Tilled_Dirt_v2_54: 2099733926
-      Tilled_Dirt_v2_55: -110150497
-      Tilled_Dirt_v2_56: -315042817
-      Tilled_Dirt_v2_57: -966180252
-      Tilled_Dirt_v2_58: 576046645
-      Tilled_Dirt_v2_59: -1389888601
-      Tilled_Dirt_v2_6: 8850265302900506954
-      Tilled_Dirt_v2_60: -1890174086
-      Tilled_Dirt_v2_61: 1492255078
-      Tilled_Dirt_v2_62: -632661058
-      Tilled_Dirt_v2_63: -130735323
-      Tilled_Dirt_v2_64: -758591665
-      Tilled_Dirt_v2_65: 1366480655
-      Tilled_Dirt_v2_66: -394708238
-      Tilled_Dirt_v2_67: -355454910
-      Tilled_Dirt_v2_68: -222812031
-      Tilled_Dirt_v2_69: 462572269
-      Tilled_Dirt_v2_7: 2914915493722732773
-      Tilled_Dirt_v2_8: 1831047206
-      Tilled_Dirt_v2_9: 216946780
+      Darker_Soil_Ground_Tiles_0: -7656601307950018570
+      Darker_Soil_Ground_Tiles_1: -2467508579294491858
+      Darker_Soil_Ground_Tiles_10: 480433932
+      Darker_Soil_Ground_Tiles_11: -1016970198
+      Darker_Soil_Ground_Tiles_12: -1688321905
+      Darker_Soil_Ground_Tiles_13: -129337906
+      Darker_Soil_Ground_Tiles_14: 1323430824
+      Darker_Soil_Ground_Tiles_15: 2134397607
+      Darker_Soil_Ground_Tiles_16: 1054545809
+      Darker_Soil_Ground_Tiles_17: -196851107
+      Darker_Soil_Ground_Tiles_18: -1702896083
+      Darker_Soil_Ground_Tiles_19: 1892120839
+      Darker_Soil_Ground_Tiles_2: -2305759826824698848
+      Darker_Soil_Ground_Tiles_20: -81960585
+      Darker_Soil_Ground_Tiles_21: 2092052088
+      Darker_Soil_Ground_Tiles_22: -1059784271
+      Darker_Soil_Ground_Tiles_23: -819253928
+      Darker_Soil_Ground_Tiles_24: 698198351
+      Darker_Soil_Ground_Tiles_25: 880228998
+      Darker_Soil_Ground_Tiles_26: 763670025
+      Darker_Soil_Ground_Tiles_27: -124042588
+      Darker_Soil_Ground_Tiles_28: 365400249
+      Darker_Soil_Ground_Tiles_29: -841315848
+      Darker_Soil_Ground_Tiles_3: -294753746977984746
+      Darker_Soil_Ground_Tiles_30: 716734625
+      Darker_Soil_Ground_Tiles_31: 1333116063
+      Darker_Soil_Ground_Tiles_32: -1440105288
+      Darker_Soil_Ground_Tiles_33: -1479708229
+      Darker_Soil_Ground_Tiles_34: -2103596490
+      Darker_Soil_Ground_Tiles_35: -1124171473
+      Darker_Soil_Ground_Tiles_36: -1556151925
+      Darker_Soil_Ground_Tiles_37: 1672794145
+      Darker_Soil_Ground_Tiles_38: 287306754
+      Darker_Soil_Ground_Tiles_39: 1202088210
+      Darker_Soil_Ground_Tiles_4: 8482409997851149542
+      Darker_Soil_Ground_Tiles_40: -1026212333
+      Darker_Soil_Ground_Tiles_41: 108890494
+      Darker_Soil_Ground_Tiles_42: 1206988361
+      Darker_Soil_Ground_Tiles_43: -1591371941
+      Darker_Soil_Ground_Tiles_44: 40591599
+      Darker_Soil_Ground_Tiles_45: 1210330239
+      Darker_Soil_Ground_Tiles_46: 1018942421
+      Darker_Soil_Ground_Tiles_47: 985633425
+      Darker_Soil_Ground_Tiles_48: -436529427
+      Darker_Soil_Ground_Tiles_49: -1708935263
+      Darker_Soil_Ground_Tiles_5: 3561780242273141937
+      Darker_Soil_Ground_Tiles_50: 1445950368
+      Darker_Soil_Ground_Tiles_51: 1683430703
+      Darker_Soil_Ground_Tiles_52: 701082672
+      Darker_Soil_Ground_Tiles_53: -237298828
+      Darker_Soil_Ground_Tiles_54: 1506365042
+      Darker_Soil_Ground_Tiles_55: -1984257304
+      Darker_Soil_Ground_Tiles_56: -1376584970
+      Darker_Soil_Ground_Tiles_6: -7920252401444689590
+      Darker_Soil_Ground_Tiles_7: 2464014838581305815
+      Darker_Soil_Ground_Tiles_8: -1528780864
+      Darker_Soil_Ground_Tiles_9: 844643638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
