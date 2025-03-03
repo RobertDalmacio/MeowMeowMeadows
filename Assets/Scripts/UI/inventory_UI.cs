@@ -22,20 +22,20 @@ public class inventory_UI : MonoBehaviour
     public void ToggleInventory(){
         if(!inventoryPanel.activeSelf){
             inventoryPanel.SetActive(true);
-            Setup();
+            Refresh();
         }
         else{
             inventoryPanel.SetActive(false);
         }
     }
 
-    void Setup()
+    void Refresh()
     {
         if(slots.Count == player.inventory.slots.Count)
         {
             for(int i=0; i<slots.Count; i++)
             {
-                if(player.inventory.slots[i].type != CollectableType.NONE)
+                if(player.inventory.slots[i].itemName != "")
                 {
                     slots[i].SetItem(player.inventory.slots[i]);
                 }
@@ -45,5 +45,19 @@ public class inventory_UI : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void Remove(int slotID)
+    {
+        item itemToDrop = GameManager.instance.item_Manager.GetItemByName(player.inventory.slots[slotID].itemName);
+        Debug.Log("here!");
+        if (itemToDrop != null)
+        {
+            Debug.Log("here!");
+            player.DropItem(itemToDrop);
+            player.inventory.Remove(slotID);
+            Refresh();
+        }
+        
     }
 }

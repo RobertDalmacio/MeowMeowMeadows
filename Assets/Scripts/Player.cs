@@ -15,6 +15,18 @@ public class Player : MonoBehaviour
         actionButton.onClick.AddListener(InteractWithGround);
     }
 
+    public void DropItem(item item)
+    {
+        Vector3 spawnLocation = transform.position;
+
+
+        Vector3 spawnOffset = Random.insideUnitCircle * 1.25f;
+
+        item droppedItem = Instantiate(item, spawnLocation + spawnOffset,Quaternion.identity);
+
+        droppedItem.rb2d.AddForce(spawnOffset * 2f, ForceMode2D.Impulse);
+    }
+
     public void InteractWithGround()
     {
 
