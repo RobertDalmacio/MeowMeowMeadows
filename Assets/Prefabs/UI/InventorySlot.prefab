@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 8289143777652389318}
   - component: {fileID: 8349112632876417372}
   m_Layer: 5
-  m_Name: Slot
+  m_Name: InventorySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,6 +362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 4698957882568711333}
   quantityText: {fileID: 251098363073676436}
+  highlight: {fileID: 0}
 --- !u!1 &3185577954742784174
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,8 +437,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
