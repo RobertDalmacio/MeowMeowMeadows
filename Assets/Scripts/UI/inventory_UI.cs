@@ -11,9 +11,18 @@ public class inventory_UI : MonoBehaviour
     public Player player;
 
     public List<Slot_UI> slots = new List<Slot_UI>();
+
+    private Canvas canvas;
+
+    public Slot_UI draggedSlot;
+
+    private Image draggedIcon;
+
+
     // Update is called once per frame
     void Awake()
     {
+        canvas = FindFirstObjectByType<Canvas>();
         inventoryPanel.SetActive(false);
         openIventory.onClick.AddListener(ToggleInventory);
     }
@@ -60,4 +69,47 @@ public class inventory_UI : MonoBehaviour
         }
         
     }
+
+    public void SlotBeginDrag(Slot_UI slot)
+    {
+        draggedSlot=slot;
+
+        draggedIcon = Instantiate(draggedSlot.itemIcon);
+        draggedIcon.raycastTarget=false;
+        draggedIcon.rectTransform.sizeDelta = new Vector2(50f,50f);
+        draggedIcon.transform.SetParent(canvas.transform);
+
+        MoveToMousePosition(draggedIcon.gameObject);
+        Debug.Log("Start Drag: " + draggedSlot.name);
+    }
+
+    public void SlotDrag()
+    {
+        MoveToMousePosition(draggedIcon.gameObject);
+        Debug.Log("Dragging : " + draggedSlot.name);
+    }
+
+    public void SlotEndDrag()
+    {
+        Destroy(draggedIcon.gameObject);
+        draggedIcon = null;
+        Debug.Log("Done dragging: "+ draggedSlot.name);
+    }
+
+    public void SlotDrop(Slot_UI slot)
+    {
+        Debug.Log("Dropped: " + draggedSlot.name + " on " + slot.name);
+    }
+
+    private void MoveToMousePosition(GameObject toMove)
+    {
+        if(canvas != null)
+        {
+            Vector2 position;
+
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas.transform as RectTransform, Input.mousePosition, null, out position);
+            toMove.transform.position = canvas.transform.TransformPoint(position);
+        }
+    }
+
 }

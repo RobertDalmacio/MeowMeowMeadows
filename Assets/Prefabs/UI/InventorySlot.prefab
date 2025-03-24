@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 5793485104428738659}
   - component: {fileID: 8289143777652389318}
   - component: {fileID: 8349112632876417372}
+  - component: {fileID: 7906306619130774905}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -305,9 +306,9 @@ RectTransform:
   - {fileID: 4861746085637999971}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -406, y: -228}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5793485104428738659
@@ -363,6 +364,35 @@ MonoBehaviour:
   itemIcon: {fileID: 4698957882568711333}
   quantityText: {fileID: 251098363073676436}
   highlight: {fileID: 0}
+--- !u!114 &7906306619130774905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309269832484222211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 13
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 6
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &3185577954742784174
 GameObject:
   m_ObjectHideFlags: 0

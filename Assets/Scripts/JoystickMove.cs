@@ -46,6 +46,7 @@ public class JoystickMove : MonoBehaviour {
                 // updates animation based on direction
                 animator.SetFloat("horizontal", direction.x);
                 animator.SetFloat("vertical", direction.y);
+                Debug.Log(direction);
             }
             else
             {

@@ -7,6 +7,11 @@ public class TileManager : MonoBehaviour
     [SerializeField] private Tilemap interactableMap;
     [SerializeField] private Tile hiddenInteractableTile;
     [SerializeField] private Tile interactedTile;
+
+    [SerializeField] private Tile darkerGrassTile;
+
+    [SerializeField] private Tile normalGrassTile;
+
     public const string InteractableTag = "interactable";
     public const string InteractableVisibleTag = "Interactable_visible";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,6 +47,26 @@ public class TileManager : MonoBehaviour
     public void SetInteracted(Vector3Int position)
     {
         interactableMap.SetTile(position, interactedTile);
+        Debug.Log("Tile is interactable! " + position);
+    }
+
+    public void SetInteractable(Vector3Int position)
+    {
+        if(interactableMap.GetTile(position)!=interactedTile)
+        {
+            interactableMap.SetTile(position, darkerGrassTile);
+            Debug.Log("Tile is not tilled yet! " + position);
+        }
+        //interactableMap.SetTile(position, darkerGrassTile);
+    }
+
+    public void SetNonInteractable(Vector3Int position)
+    {
+        if(interactableMap.GetTile(position)!=interactedTile)
+        {
+            interactableMap.SetTile(position, normalGrassTile);
+            Debug.Log("Tile is not interactable yet! " + position);
+        }
     }
 
 }
