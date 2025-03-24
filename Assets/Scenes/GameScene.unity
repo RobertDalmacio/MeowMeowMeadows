@@ -11545,26 +11545,26 @@ MonoBehaviour:
   player: {fileID: 1773212959}
   slots:
   - {fileID: 310960765}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 182151513}
+  - {fileID: 43812980}
+  - {fileID: 2070407893}
+  - {fileID: 302365591}
+  - {fileID: 1740500570}
+  - {fileID: 645660452}
+  - {fileID: 72202448}
+  - {fileID: 376202288}
+  - {fileID: 1423096505}
+  - {fileID: 1234006824}
+  - {fileID: 2044558802}
+  - {fileID: 234483885}
+  - {fileID: 30642724}
+  - {fileID: 2020151614}
+  - {fileID: 1345625242}
+  - {fileID: 600173673}
+  - {fileID: 809058126}
+  - {fileID: 929297106}
+  - {fileID: 1484091107}
+  - {fileID: 1799297544}
   draggedSlot: {fileID: 0}
 --- !u!1 &1646332654
 GameObject:
@@ -12493,6 +12493,13 @@ MonoBehaviour:
   inventory:
     slots: []
   actionButton: {fileID: 1593099708}
+  characterDirection: {fileID: 1561463546}
+  leftLook: {fileID: 1252287953, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
+  leftLook2: {fileID: -338574880, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
+  rightLook: {fileID: 2028931720, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
+  rightLook2: {fileID: 1027567421, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
+  frontLook: {fileID: -379078867, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
+  frontLook2: {fileID: -1878738942, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
 --- !u!1001 &1799297542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12832,6 +12839,8 @@ MonoBehaviour:
   interactableMap: {fileID: 613359762}
   hiddenInteractableTile: {fileID: 11400000, guid: 83f4ae048fc12445ab11744cd11a717f, type: 2}
   interactedTile: {fileID: 11400000, guid: 15491d5f600394943b6cff80ec58b522, type: 2}
+  darkerGrassTile: {fileID: 11400000, guid: 15243a9e28b9948a8853f64f0601b2a8, type: 2}
+  normalGrassTile: {fileID: 11400000, guid: 954c8b0ded5eec241aa73dcb379ae1d4, type: 2}
 --- !u!4 &1970401592
 Transform:
   m_ObjectHideFlags: 0
