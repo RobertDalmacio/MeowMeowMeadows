@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -7,6 +8,10 @@ public class GameManager : MonoBehaviour
     public TileManager tileManager;
 
     public itemManager item_Manager;
+
+    public UIManager uiManager;
+
+    public Player player;
 
     private void Awake()
     {
@@ -22,5 +27,8 @@ public class GameManager : MonoBehaviour
 
         item_Manager = GetComponent<itemManager>();
         tileManager = GetComponent<TileManager>();
+        uiManager = GetComponent<UIManager>();
+
+        player = FindAnyObjectByType<Player>();
     }
 }

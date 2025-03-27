@@ -6,7 +6,7 @@ using UnityEditor.Search;
 
 public class Player : MonoBehaviour
 {
-    public Inventory inventory;
+    public InventoryManager inventory;
 
     public Button actionButton;
 
@@ -25,16 +25,11 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        inventory = new Inventory(21);
+        inventory = GetComponent<InventoryManager>();
         actionButton.onClick.AddListener(InteractWithGround);
     }
 
-    private void Update()
-    {
-        //ShowInteractablePosition();
-        //actionButton.onClick.AddListener(InteractWithGround);
-        Debug.Log("character sprite "+ characterDirection.sprite);
-    }
+    
 
     public void DropItem(item item)
     {
@@ -48,16 +43,17 @@ public class Player : MonoBehaviour
         droppedItem.rb2d.AddForce(spawnOffset * 2f, ForceMode2D.Impulse);
     }
 
+    public void DropItem(item item, int numDrop)
+    {
+        for(int i=0; i< numDrop; i++)
+        {
+            DropItem(item);
+        }
+    }
+
     public void InteractWithGround()
     {
 
-        /*Vector3Int position = new Vector3Int((int)transform.position.x, (int)transform.position.y,0);
-
-        if(GameManager.instance.tileManager.IsInteractable(position))
-        {
-            Debug.Log("Tile is interactable!");
-            GameManager.instance.tileManager.SetInteracted(position);
-        }*/
         Vector3Int position;
         if(characterDirection.sprite == leftLook || characterDirection.sprite == leftLook2){
                 position = new Vector3Int((int)transform.position.x-1, (int)transform.position.y - 1,0);
@@ -74,7 +70,7 @@ public class Player : MonoBehaviour
             position = new Vector3Int((int)transform.position.x, (int)transform.position.y ,0);
            
         }
-        //Vector3Int position = new Vector3Int((int)transform.position.x, (int)transform.position.y,0);
+        
         if(positionTile!=position && GameManager.instance.tileManager.IsInteractable(position))
         {
             
