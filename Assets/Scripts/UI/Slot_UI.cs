@@ -10,7 +10,7 @@ public class Slot_UI : MonoBehaviour
     public Image itemIcon;
     public TextMeshProUGUI quantityText;
 
-    [SerializeField] private GameObject highlight;
+    [SerializeField] public GameObject highlight;
 
     public void SetItem(Inventory.Slot slot)
     {
