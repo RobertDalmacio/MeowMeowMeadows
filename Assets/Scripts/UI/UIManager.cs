@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour {
 
     public GameObject inventoryPanel;
     public Button openIventory;
+    public Button closeButton;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
@@ -39,6 +40,7 @@ public class UIManager : MonoBehaviour {
         if(inventoryPanel!=null){
             inventoryPanel.SetActive(false);
             openIventory.onClick.AddListener(ToggleInventory);
+            closeButton.onClick.AddListener(ToggleInventory);
         }
     }
 
