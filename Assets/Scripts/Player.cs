@@ -22,8 +22,11 @@ public class Player : MonoBehaviour
 
     public Sprite frontLook;
     public Sprite frontLook2;
+    //public AnimationClip hoe_forward;
+    public Animator animator;
 
     private Vector3Int positionTile;
+
 
     private void Awake()
     {
@@ -109,9 +112,12 @@ public class Player : MonoBehaviour
             return;
         }
 
+        animator.SetTrigger("HOE");
+
         // Plow the ground
         GameManager.instance.tileManager.SetInteracted(position);
         Debug.Log("Plowed the ground at position: " + position);
+        
     }
 
     public void ShowInteractablePosition()

@@ -13365,6 +13365,7 @@ MonoBehaviour:
   rightLook2: {fileID: 1027567421, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
   frontLook: {fileID: -379078867, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
   frontLook2: {fileID: -1878738942, guid: f19e9033f490d4aef8f97a59c5a2773e, type: 3}
+  animator: {fileID: 1561463547}
 --- !u!114 &1773212960
 MonoBehaviour:
   m_ObjectHideFlags: 0

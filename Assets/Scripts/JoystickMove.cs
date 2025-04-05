@@ -39,6 +39,7 @@ public class JoystickMove : MonoBehaviour {
     {
         if (animator != null)
         {
+            //animator.SetBool("Hoeing", false);
             if (direction.magnitude > 0)
             {
                 // transitions animation to running state
