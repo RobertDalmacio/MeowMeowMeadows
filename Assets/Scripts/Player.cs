@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.Search;
+
 
 public class Player : MonoBehaviour
 {
