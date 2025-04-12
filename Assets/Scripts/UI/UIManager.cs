@@ -47,7 +47,7 @@ public class UIManager : MonoBehaviour {
         if (settingsPanel != null) {
             settingsPanel.SetActive(false);
         }
-        if (volumeSlider != null) {
+        if (volumeSlider != null && AudioManager.instance != null) {
            volumeSlider.value = AudioManager.instance.currentBGMVolume;
         }
     }
@@ -101,7 +101,11 @@ public class UIManager : MonoBehaviour {
 
     void SetVolume() {
         float volume = volumeSlider.value;
-        mixer.SetFloat("MusicVolume", volume);
-        AudioManager.instance.SetMusicVolume(volume);
+        if (mixer != null) {
+            mixer.SetFloat("MusicVolume", volume);
+        }
+        if (AudioManager.instance != null) {
+            AudioManager.instance.SetMusicVolume(volume);
+        }
     }
 }
