@@ -1,12 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class UIManager : MonoBehaviour {
-    public Sprite[] toggleSprites;
-    public Image musicToggle;
-    AudioSource audioSource;
-
     public Dictionary<string, inventory_UI> inventoryUIByName = new Dictionary<string, inventory_UI>();
     public List<inventory_UI> inventoryUIs;
 
@@ -14,13 +11,18 @@ public class UIManager : MonoBehaviour {
     public static Image draggedIcon;
     public static bool dragSingle;
 
+    // audio & volume
+    public AudioMixer mixer;
+    public GameObject settingsPanel;
+    public Slider volumeSlider;
+
+
     public GameObject inventoryPanel;
     public Button openIventory;
     public Button closeButton;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
-        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -41,6 +43,12 @@ public class UIManager : MonoBehaviour {
             inventoryPanel.SetActive(false);
             openIventory.onClick.AddListener(ToggleInventory);
             closeButton.onClick.AddListener(ToggleInventory);
+        }
+        if (settingsPanel != null) {
+            settingsPanel.SetActive(false);
+        }
+        if (volumeSlider != null) {
+           volumeSlider.value = AudioManager.instance.currentBGMVolume;
         }
     }
 
@@ -91,22 +99,9 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    private void SpriteChange() {
-        if (musicToggle.sprite == toggleSprites[0]) { // turn off
-            musicToggle.sprite = toggleSprites[1];
-            return;
-        }
-        musicToggle.sprite = toggleSprites[0]; // turn on
-    }
-
-    public void OnMusicToggleButtonClick() {
-        SpriteChange();
-        if (!audioSource.isPlaying) {
-            audioSource.Play();
-        }
-        else {
-            audioSource.Pause();
-        }
-
+    void SetVolume() {
+        float volume = volumeSlider.value;
+        mixer.SetFloat("MusicVolume", volume);
+        AudioManager.instance.SetMusicVolume(volume);
     }
 }
