@@ -1,4 +1,5 @@
 using Unity.VisualScripting;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -92,7 +93,9 @@ public class Player : MonoBehaviour
         // Check if the item is a hoe
         if (slot.itemName == "Hoe")
         {
-            PlowGround();
+            animator.SetTrigger("HOE"); // start playing the animation first before setting the tile
+            Vector3Int position = GetPositionBasedOnDirection(); // Get the position based on the player's direction
+            StartCoroutine(PlowGround(position));
         }
         else
         {
@@ -101,22 +104,14 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void PlowGround()
-    {
-        // Get the position based on the player's direction
-        Vector3Int position = GetPositionBasedOnDirection();
-
+    public IEnumerator PlowGround(Vector3Int position) {
+        yield return new WaitForSeconds(0.9f);
         // Check if the position is interactable
-        if (!GameManager.instance.tileManager.IsInteractable(position))
-        {
-            return;
+        if (GameManager.instance.tileManager.IsInteractable(position)) {
+            // Plow the ground
+            GameManager.instance.tileManager.SetInteracted(position);
+            Debug.Log("Plowed the ground at position: " + position);
         }
-
-        animator.SetTrigger("HOE");
-
-        // Plow the ground
-        GameManager.instance.tileManager.SetInteracted(position);
-        Debug.Log("Plowed the ground at position: " + position);
         
     }
 
@@ -132,24 +127,43 @@ public class Player : MonoBehaviour
         }
     }
 
-    private Vector3Int GetPositionBasedOnDirection()
-    {
-        if (characterDirection.sprite == leftLook || characterDirection.sprite == leftLook2)
-        {
-            return new Vector3Int((int)transform.position.x - 1, (int)transform.position.y - 1, 0);
+    private Vector3Int GetPositionBasedOnDirection() {
+        Debug.Log("character at position (x,y): " + transform.position.x + ", " + transform.position.y);
+
+        int x = (int) (Mathf.Round(transform.position.x));
+        float xOffset = Mathf.Abs(Mathf.Abs(transform.position.x) - Mathf.Abs(x));
+        int y = (int) (Mathf.Round(transform.position.y));
+        float yOffset = Mathf.Abs(Mathf.Abs(transform.position.y) - Mathf.Abs(y));
+        Debug.Log("rounded position (x,y): " + x + ", " + y);
+
+        if (characterDirection.sprite == leftLook || characterDirection.sprite == leftLook2) {
+            Debug.Log("Facing left");
+            if (xOffset >= 0.2f){
+                x -= 1;
+            }
+
+            y += 1;
         }
-        else if (characterDirection.sprite == rightLook || characterDirection.sprite == rightLook2)
-        {
-            return new Vector3Int((int)transform.position.x + 1, (int)transform.position.y - 1, 0);
+        else if (characterDirection.sprite == rightLook || characterDirection.sprite == rightLook2) {
+            Debug.Log("Facing right");
+            x += 2;
+            y+= 1;
         }
-        else if (characterDirection.sprite == frontLook || characterDirection.sprite == frontLook2)
-        {
-            return new Vector3Int((int)transform.position.x, (int)transform.position.y - 2, 0);
+        else if (characterDirection.sprite == frontLook || characterDirection.sprite == frontLook2) {
+            Debug.Log("Facing front");
+            x += 1;
+
+            if (yOffset >= 0.3f) {
+                y += 1;
+            }
             
         }
-        else
-        {
-            return new Vector3Int((int)transform.position.x, (int)transform.position.y, 0);
+        else { // looking up
+            Debug.Log("Facing up");
+            x += 1;
+            y += 2;
         }
+
+        return new Vector3Int(x, y, 0);
     }
 }
