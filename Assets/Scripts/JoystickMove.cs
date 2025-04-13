@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class JoystickMove : MonoBehaviour {
 
-    public const string landTag = "Island";
-
     public float playerSpeed;
     
     public Joystick movementJoystick;
