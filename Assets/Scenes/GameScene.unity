@@ -3164,10 +3164,10 @@ RectTransform:
   - {fileID: 1976854479}
   m_Father: {fileID: 1298457662}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 540}
-  m_SizeDelta: {x: 242.894, y: 451.5027}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.0000038146973}
+  m_SizeDelta: {x: 193.78296, y: 360.213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382553919
 MonoBehaviour:
@@ -4331,7 +4331,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 729, y: 440.57996}
+  m_AnchoredPosition: {x: 732, y: 400}
   m_SizeDelta: {x: 295.889, y: 92.507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592590163
@@ -4775,7 +4775,7 @@ RectTransform:
   m_Father: {fileID: 1316823562}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.33499908, y: 0}
   m_SizeDelta: {x: 9.33, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11304,8 +11304,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1005678705}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -4.999996, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13665,7 +13665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1298457659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15812,7 +15812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 113.4, y: 213}
+  m_AnchoredPosition: {x: 89.834, y: 169}
   m_SizeDelta: {x: 28.631, y: 47.4775}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1682352086
@@ -17418,9 +17418,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1970401590}
-        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1970401595}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18110,7 +18110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -845, y: 437}
+  m_AnchoredPosition: {x: -832, y: 413}
   m_SizeDelta: {x: 114.046, y: 99.661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2044819313

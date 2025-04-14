@@ -99,7 +99,7 @@ public class UIManager : MonoBehaviour {
         }
     }
 
-    void SetVolume() {
+    public void SetVolume() {
         float volume = volumeSlider.value;
         if (mixer != null) {
             mixer.SetFloat("MusicVolume", volume);
