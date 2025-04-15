@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 public class TileManager : MonoBehaviour
 {
     [SerializeField] private Tilemap interactableMap;
-    [SerializeField] private Tile hiddenInteractableTile;
+    [SerializeField] private Tile interactableTile;
     [SerializeField] private Tile interactedTile;
 
     [SerializeField] private Tile darkerGrassTile;
@@ -24,10 +24,11 @@ public class TileManager : MonoBehaviour
         foreach(var position in interactableMap.cellBounds.allPositionsWithin)
         {
             TileBase tile = interactableMap.GetTile(position);
-
-            if (tile != null && tile.name == InteractableVisibleTag)
+            
+            if (tile != null)
             {
-                interactableMap.SetTile(position, hiddenInteractableTile);
+                Debug.Log(tile.name);
+                //interactableMap.SetTile(position, hiddenInteractableTile);
             }
             
         }
@@ -37,12 +38,8 @@ public class TileManager : MonoBehaviour
     {
         TileBase tile = interactableMap.GetTile(position);
 
-        if(tile != null)
-        {
-            if(tile.name == InteractableTag)
-            {
-                return true;
-            }
+        if(tile != null && tile.name == InteractableTag) {
+            return true;
         }
 
         return false;

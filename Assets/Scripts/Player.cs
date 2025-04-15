@@ -195,24 +195,25 @@ public class Player : MonoBehaviour
 
         if (characterDirection.sprite == leftLook || characterDirection.sprite == leftLook2) {
             Debug.Log("Facing left");
-            if (xOffset >= 0.2f){
-                x -= 1;
-            }
-
+            x += 1;
             y += 1;
         }
         else if (characterDirection.sprite == rightLook || characterDirection.sprite == rightLook2) {
             Debug.Log("Facing right");
             x += 2;
-            y+= 1;
+            y += 1;
         }
         else if (characterDirection.sprite == frontLook || characterDirection.sprite == frontLook2) {
             Debug.Log("Facing front");
-            x += 1;
+            x += 2;
+            // if (xOffset >= 0.5f) {
+            //     x += 1;
+            // }
+            //y -= 1;
 
-            if (yOffset >= 0.3f) {
-                y += 1;
-            }
+            // if (yOffset >= 0.3f) {
+            //     y -= 1;
+            // }
             
         }
         else { // looking up
