@@ -30,6 +30,11 @@ public class inventory_UI : MonoBehaviour
 
     public void Refresh()
     {
+        if (inventory == null)
+        {
+            return;
+        }
+        
         if(slots.Count == inventory.slots.Count)
         {
             for(int i=0; i<slots.Count; i++)

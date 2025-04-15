@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Island
   - Hill
+  - Plowed Ground
   layers:
   - Default
   - TransparentFX

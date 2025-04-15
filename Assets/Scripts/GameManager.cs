@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     public Player player;
 
+    public GameObject plantItem; 
+
     private void Awake()
     {
         if(instance !=null && instance != this)

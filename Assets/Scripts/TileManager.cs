@@ -12,8 +12,12 @@ public class TileManager : MonoBehaviour
 
     [SerializeField] private Tile normalGrassTile;
 
+    [SerializeField] private float animationSpeed = 1f;
+
     public const string InteractableTag = "interactable";
     public const string InteractableVisibleTag = "Interactable_visible";
+    public AnimatedTile plantingAnimatedTile;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -67,6 +71,25 @@ public class TileManager : MonoBehaviour
             interactableMap.SetTile(position, normalGrassTile);
             Debug.Log("Tile is not interactable yet! " + position);
         }
+    }
+
+    public Tilemap GetTilemap()
+    {
+        return interactableMap;
+    }
+
+    public AnimatedTile GetPlantingAnimatedTile()
+    {
+        return plantingAnimatedTile;
+    }
+
+    public float GetAnimationDuration()
+    {
+        if (plantingAnimatedTile != null && plantingAnimatedTile?.m_AnimatedSprites.Length > 0)
+        {
+            return plantingAnimatedTile.m_AnimatedSprites.Length / animationSpeed;
+        }
+        return 0f; // Default to 0 if no sprites are available
     }
 
 }

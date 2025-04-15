@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {
@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     public Sprite frontLook2;
     //public AnimationClip hoe_forward;
     public Animator animator;
+
+    private HashSet<Vector3Int> plowedPositions = new HashSet<Vector3Int>(); // HashSet to keep track of plowed positions
 
     private Vector3Int positionTile;
 
@@ -97,6 +99,37 @@ public class Player : MonoBehaviour
             Vector3Int position = GetPositionBasedOnDirection(); // Get the position based on the player's direction
             StartCoroutine(PlowGround(position));
         }
+        else if (slot.itemName == "wheat seeds")
+        {
+            // Get the position based on the player's direction
+            Vector3Int position = GetPositionBasedOnDirection();
+
+            // Check if the ground is plowed
+            if (plowedPositions.Contains(position))
+            {
+                // Get the Tilemap
+                Tilemap tilemap = GameManager.instance.tileManager.GetTilemap();
+
+                // Reference to Animated Tile
+                AnimatedTile animatedTile = GameManager.instance.tileManager.GetPlantingAnimatedTile();
+
+                if (tilemap != null && animatedTile != null)
+                {
+                    // Replace the tile at the position with the Animated Tile
+                    tilemap.SetTile(position, animatedTile);
+
+                    // Get the animation duration from the TileManager
+                    float animationDuration = GameManager.instance.tileManager.GetAnimationDuration();
+
+                    // Start a coroutine to show animation of plant growth
+                    StartCoroutine(GrowPlant(tilemap, position, animationDuration));
+                }
+            }
+            else
+            {
+                Debug.Log("Cannot plant here. The ground is not plowed.");
+            }
+        }
         else
         {
             // TODO: Add interaction for other items
@@ -110,9 +143,33 @@ public class Player : MonoBehaviour
         if (GameManager.instance.tileManager.IsInteractable(position)) {
             // Plow the ground
             GameManager.instance.tileManager.SetInteracted(position);
+
+            // Track the plowed position
+            plowedPositions.Add(position);
+
             Debug.Log("Plowed the ground at position: " + position);
         }
         
+    }
+
+    private IEnumerator GrowPlant(Tilemap tilemap, Vector3Int position, float animationDuration)
+    {
+        // Wait for the animation to complete
+        yield return new WaitForSeconds(animationDuration);
+
+        // Convert the tilemap position to world position
+        Vector3 worldPosition = tilemap.CellToWorld(position) + tilemap.tileAnchor;
+
+        // Remove the animated tile from the tilemap
+        tilemap.SetTile(position, null);
+
+        // Reference to plant item from GameManager
+        GameObject plantItem = GameManager.instance.plantItem;
+        if (plantItem != null)
+        {
+            // Drop plant item at the world position
+            Instantiate(plantItem, worldPosition, Quaternion.identity);
+        }
     }
 
     public void ShowInteractablePosition()
