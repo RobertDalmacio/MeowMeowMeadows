@@ -5,20 +5,30 @@ using UnityEngine.Tilemaps;
 public class TileManager : MonoBehaviour
 {
     [SerializeField] private Tilemap interactableMap;
-    [SerializeField] private Tile hiddenInteractableTile;
+    [SerializeField] public Tile interactableTile;
     [SerializeField] private Tile interactedTile;
+
+    [SerializeField] private Tile darkerGrassTile;
+
+    [SerializeField] private Tile normalGrassTile;
+
+    [SerializeField] private float animationSpeed = 1f;
+
     public const string InteractableTag = "interactable";
     public const string InteractableVisibleTag = "Interactable_visible";
+    public AnimatedTile plantingAnimatedTile;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         foreach(var position in interactableMap.cellBounds.allPositionsWithin)
         {
             TileBase tile = interactableMap.GetTile(position);
-
-            if (tile != null && tile.name == InteractableVisibleTag)
+            
+            if (tile != null)
             {
-                interactableMap.SetTile(position, hiddenInteractableTile);
+                Debug.Log(tile.name);
+                //interactableMap.SetTile(position, hiddenInteractableTile);
             }
             
         }
@@ -28,12 +38,8 @@ public class TileManager : MonoBehaviour
     {
         TileBase tile = interactableMap.GetTile(position);
 
-        if(tile != null)
-        {
-            if(tile.name == InteractableTag)
-            {
-                return true;
-            }
+        if(tile != null && tile.name == InteractableTag) {
+            return true;
         }
 
         return false;
@@ -42,6 +48,45 @@ public class TileManager : MonoBehaviour
     public void SetInteracted(Vector3Int position)
     {
         interactableMap.SetTile(position, interactedTile);
+        Debug.Log("Tile is interactable! " + position);
+    }
+
+    public void SetInteractable(Vector3Int position)
+    {
+        if(interactableMap.GetTile(position)!=interactedTile)
+        {
+            interactableMap.SetTile(position, darkerGrassTile);
+            Debug.Log("Tile is not tilled yet! " + position);
+        }
+        //interactableMap.SetTile(position, darkerGrassTile);
+    }
+
+    public void SetNonInteractable(Vector3Int position)
+    {
+        if(interactableMap.GetTile(position)!=interactedTile)
+        {
+            interactableMap.SetTile(position, normalGrassTile);
+            Debug.Log("Tile is not interactable yet! " + position);
+        }
+    }
+
+    public Tilemap GetTilemap()
+    {
+        return interactableMap;
+    }
+
+    public AnimatedTile GetPlantingAnimatedTile()
+    {
+        return plantingAnimatedTile;
+    }
+
+    public float GetAnimationDuration()
+    {
+        if (plantingAnimatedTile != null && plantingAnimatedTile?.m_AnimatedSprites.Length > 0)
+        {
+            return plantingAnimatedTile.m_AnimatedSprites.Length / animationSpeed;
+        }
+        return 0f; // Default to 0 if no sprites are available
     }
 
 }

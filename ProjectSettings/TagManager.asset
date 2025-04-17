@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Island
   - Hill
+  - Plowed Ground
   layers:
   - Default
   - TransparentFX
@@ -49,7 +50,7 @@ TagManager:
   - name: Hill
     uniqueID: 2348347121
     locked: 0
-  - name: Plants
+  - name: Foreground
     uniqueID: 2221643153
     locked: 0
   - name: Player
