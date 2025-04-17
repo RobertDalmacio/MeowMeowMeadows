@@ -16,6 +16,9 @@ public class StoreManager : MonoBehaviour
     public itemData wheatSeedData; // Reference to the itemData for wheat seeds
     public itemData tomatoSeedData; // Reference to the itemData for tomato seeds
 
+    public itemData wheatPlantData; // Reference to the itemData for wheat plant
+    public itemData tomatoPlantData; // Reference to the itemData for tomato plant
+
     // Seed prices
     public int wheatSeedPrice = 10;
     public int tomatoSeedPrice = 15;
@@ -32,9 +35,9 @@ public class StoreManager : MonoBehaviour
 
         // Set up buttons' onClick listeners
         buyWheatButton.onClick.AddListener(() => BuySeed("wheat seeds", wheatSeedPrice));
-        sellWheatButton.onClick.AddListener(() => SellSeed("wheat seeds", wheatSeedPrice));
+        sellWheatButton.onClick.AddListener(() => SellPlant("wheat harvested", wheatSeedPrice));
         buyTomatoButton.onClick.AddListener(() => BuySeed("tomato seeds", tomatoSeedPrice));
-        sellTomatoButton.onClick.AddListener(() => SellSeed("tomato seeds", tomatoSeedPrice));
+        sellTomatoButton.onClick.AddListener(() => SellPlant("tomato harvested", tomatoSeedPrice));
     }
 
     // Update the player's money UI
@@ -50,14 +53,22 @@ public class StoreManager : MonoBehaviour
         {
             Debug.Log("HERE " );
             playerMoney -= seedPrice;
-            itemData selectedSeed = seedType == "Wheat" ? wheatSeedData : tomatoSeedData;
+            itemData selectedSeed = seedType == "wheat seeds" ? wheatSeedData : tomatoSeedData;
         
-        // Create the item in the game world
-        item newItem = new GameObject().AddComponent<item>();
-        newItem.SetItemData(selectedSeed);
+            // Create the item in the game world
+            item newItem = new GameObject().AddComponent<item>();
+            newItem.SetItemData(selectedSeed);
 
-        // Add the item to the player's inventory (Backpack)
-        inventoryManager.Add("Backpack", newItem);
+            // Add the item to the player's inventory (Backpack)
+            inventoryManager.Add("Toolbar", newItem);
+
+            UIManager uiManager = FindFirstObjectByType<UIManager>();
+            if (uiManager != null)
+            {
+                uiManager.RefreshInventoryUI("Toolbar");
+            }
+
+            UpdateMoneyUI();
             
         }
         else
@@ -67,10 +78,10 @@ public class StoreManager : MonoBehaviour
     }
     
 
-    // Handle selling seeds
-    void SellSeed(string seedType, int seedPrice)
+    // Handle selling plants
+    void SellPlant(string seedType, int seedPrice)
     {
-        itemData selectedSeed = seedType == "Wheat" ? wheatSeedData : tomatoSeedData;
+        itemData selectedSeed = seedType == "wheat harvested" ? wheatPlantData : tomatoPlantData;
 
         // Assuming you want to remove an item from the inventory
         Inventory backpackInventory = inventoryManager.GetInventoryByName("Backpack");
@@ -78,10 +89,33 @@ public class StoreManager : MonoBehaviour
         {
             if (slot.itemName == selectedSeed.itemName && slot.count > 0)
             {
-                slot.RemoveItem(); // Remove one seed
+                slot.RemoveItem(); // Remove one plant
+                UIManager uiManager = FindFirstObjectByType<UIManager>();
+                if (uiManager != null)
+                {
+                    uiManager.RefreshInventoryUI("Backpack");
+                }
                 playerMoney += seedPrice; //decrease money
                 UpdateMoneyUI();
-                break;
+                return;
+            }
+        }
+
+        // Assuming you want to remove an item from the inventory
+        Inventory toolbarInventory = inventoryManager.GetInventoryByName("Toolbar");
+        foreach (var slot in toolbarInventory.slots)
+        {
+            if (slot.itemName == selectedSeed.itemName && slot.count > 0)
+            {
+                slot.RemoveItem(); // Remove one plant
+                UIManager uiManager = FindFirstObjectByType<UIManager>();
+                if (uiManager != null)
+                {
+                    uiManager.RefreshInventoryUI("Toolbar");
+                }
+                playerMoney += seedPrice; //decrease money
+                UpdateMoneyUI();
+                return;
             }
         }
         

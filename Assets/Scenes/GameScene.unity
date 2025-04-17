@@ -854,6 +854,8 @@ MonoBehaviour:
   sellTomatoButton: {fileID: 1196082624}
   wheatSeedData: {fileID: 11400000, guid: d24642833e5644a98b85c5dcf74e388f, type: 2}
   tomatoSeedData: {fileID: 11400000, guid: 5e24da49059ae401caad425ba887fdbd, type: 2}
+  wheatPlantData: {fileID: 11400000, guid: 402dec0299e2c48a693edc612c153143, type: 2}
+  tomatoPlantData: {fileID: 11400000, guid: 70f56570a293846ed807bc9a5d79461e, type: 2}
   wheatSeedPrice: 10
   tomatoSeedPrice: 15
   playerMoney: 100
@@ -3325,7 +3327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Player Money: 0'
+  m_text: 'Money: 100$'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
   m_sharedMaterial: {fileID: -9214616803734668169, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
@@ -3352,7 +3354,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.6
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
