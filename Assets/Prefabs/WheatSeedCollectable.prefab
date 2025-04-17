@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 7587287007351113225}
   - component: {fileID: 5977226121013439300}
   m_Layer: 0
-  m_Name: Collectable
-  m_TagString: Untagged
+  m_Name: WheatSeedCollectable
+  m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2073324143
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 8474670595409141939, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
