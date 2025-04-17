@@ -184,6 +184,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -216,7 +229,7 @@ TextureImporter:
         x: 0
         y: 208
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,7 +249,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 209
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -260,7 +273,7 @@ TextureImporter:
         x: 0
         y: 192
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +292,10 @@ TextureImporter:
       name: farming-Plants-items_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 176
+        x: 16
+        y: 192
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +314,10 @@ TextureImporter:
       name: farming-Plants-items_5
       rect:
         serializedVersion: 2
-        x: 15
-        y: 177
-        width: 17
-        height: 15
+        x: 0
+        y: 176
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,9 +337,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 192
+        y: 176
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,7 +361,7 @@ TextureImporter:
         x: 0
         y: 160
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,10 +380,10 @@ TextureImporter:
       name: farming-Plants-items_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
+        x: 16
+        y: 160
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,9 +402,9 @@ TextureImporter:
       name: farming-Plants-items_9
       rect:
         serializedVersion: 2
-        x: 15
-        y: 145
-        width: 17
+        x: 0
+        y: 144
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -412,7 +425,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 161
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -436,7 +449,7 @@ TextureImporter:
         x: 0
         y: 128
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,10 +468,10 @@ TextureImporter:
       name: farming-Plants-items_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
+        x: 16
+        y: 128
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,10 +490,10 @@ TextureImporter:
       name: farming-Plants-items_13
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 0
+        y: 112
         width: 16
-        height: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +512,10 @@ TextureImporter:
       name: farming-Plants-items_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 16
+        y: 112
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,10 +534,10 @@ TextureImporter:
       name: farming-Plants-items_15
       rect:
         serializedVersion: 2
-        x: 15
-        y: 112
-        width: 17
-        height: 15
+        x: 0
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,7 +581,7 @@ TextureImporter:
         x: 0
         y: 80
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,10 +600,10 @@ TextureImporter:
       name: farming-Plants-items_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 16
+        y: 80
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +622,10 @@ TextureImporter:
       name: farming-Plants-items_19
       rect:
         serializedVersion: 2
-        x: 15
-        y: 31
-        width: 17
-        height: 66
+        x: 0
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +644,10 @@ TextureImporter:
       name: farming-Plants-items_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 16
+        y: 64
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -654,9 +667,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -675,10 +688,10 @@ TextureImporter:
       name: farming-Plants-items_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 16
+        y: 48
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -698,9 +711,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 16
-        height: 17
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,9 +733,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 15
+        y: 32
         width: 16
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,8 +754,8 @@ TextureImporter:
       name: farming-Plants-items_25
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
+        x: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -759,11 +772,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: farming-Plants-items_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1b487ac9c0a423e870b4efad27cd90
+      internalID: 1569758517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farming-Plants-items_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f968835a69ac4509ae06e4a41f7ac74
+      internalID: -1761713184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: farming-Plants-items_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd769e256508c449384bf76944a4c9f5
+      internalID: -106415388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8c24a503148f0400e860d22740439937
     internalID: 0
     vertices: []
     indices: 
@@ -792,6 +871,9 @@ TextureImporter:
       farming-Plants-items_23: 1703367809675064884
       farming-Plants-items_24: 1484927363220884529
       farming-Plants-items_25: 1337806114678918342
+      farming-Plants-items_26: 1569758517
+      farming-Plants-items_27: -1761713184
+      farming-Plants-items_28: -106415388
       farming-Plants-items_3: 2161777497763536343
       farming-Plants-items_4: -1407192652626693244
       farming-Plants-items_5: -2245968639394081413
