@@ -18912,6 +18912,8 @@ MonoBehaviour:
   animationSpeed: 1
   plantingAnimatedTile: {fileID: 11400000, guid: 0e365d298b4f54545a84a037e1fdfec8, type: 2}
   plantingAnimatedTomatoTile: {fileID: 11400000, guid: 9cb8af61332d8437d8b325ba31b5d4fd, type: 2}
+  wheatEndTile: {fileID: 11400000, guid: 2e6198794c76b4b7c90ad59dae5ca48f, type: 2}
+  tomatoEndTile: {fileID: 11400000, guid: b882dd976da454038b56d1b34aecea9e, type: 2}
 --- !u!4 &1970401592
 Transform:
   m_ObjectHideFlags: 0

@@ -19,6 +19,9 @@ public class TileManager : MonoBehaviour
     public AnimatedTile plantingAnimatedTile;
     public AnimatedTile plantingAnimatedTomatoTile;
 
+    public Tile wheatEndTile;
+    public Tile tomatoEndTile;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,6 +53,16 @@ public class TileManager : MonoBehaviour
     {
         interactableMap.SetTile(position, interactedTile);
         Debug.Log("Tile is interactable! " + position);
+    }
+
+    public Tile GetWheatTile()
+    {
+        return wheatEndTile;
+    }
+
+    public Tile GetTomatoTile()
+    {
+        return tomatoEndTile;
     }
 
     public void SetInteractable(Vector3Int position)

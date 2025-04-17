@@ -64,6 +64,23 @@ public class Player : MonoBehaviour
 
     public void InteractWithGround()
     {
+        // Get the position based on the player's direction
+        Vector3Int position = GetPositionBasedOnDirection();
+
+        // Get the Tilemap
+        Tilemap tilemap = GameManager.instance.tileManager.GetTilemap();
+
+        //check if wheat plant
+        if(tilemap.GetTile(position)==GameManager.instance.tileManager.GetWheatTile())
+        {
+            harvestWheat(tilemap,position);
+        }
+
+        //check if tomato plant
+        if(tilemap.GetTile(position)==GameManager.instance.tileManager.GetTomatoTile())
+        {
+            harvestTomato(tilemap,position);
+        }
         // Get the highlighted toolbar slot
         Slot_UI highlightedSlot = GetHighlightedToolbarSlot();
 
@@ -86,19 +103,16 @@ public class Player : MonoBehaviour
         if (slot.itemName == "Hoe")
         {
             animator.SetTrigger("HOE"); // start playing the animation first before setting the tile
-            Vector3Int position = GetPositionBasedOnDirection(); // Get the position based on the player's direction
             StartCoroutine(PlowGround(position));
         }
         else if (slot.itemName == "wheat seeds")
         {
-            // Get the position based on the player's direction
-            Vector3Int position = GetPositionBasedOnDirection();
+            
 
             // Check if the ground is plowed
             if (plowedPositions.Contains(position))
             {
-                // Get the Tilemap
-                Tilemap tilemap = GameManager.instance.tileManager.GetTilemap();
+                
 
                 // Reference to Animated Tile
                 AnimatedTile animatedTile = GameManager.instance.tileManager.GetPlantingAnimatedTile();
@@ -120,7 +134,9 @@ public class Player : MonoBehaviour
                     }
 
                     // Start a coroutine to show animation of plant growth
-                    StartCoroutine(GrowWheat(tilemap, position, animationDuration));
+                    StartCoroutine(GrowWheat(tilemap,position, animationDuration));
+
+                    //setWheatTile(tilemap,position);
                 }
             }
             else
@@ -130,14 +146,10 @@ public class Player : MonoBehaviour
         }
         else if (slot.itemName == "tomato seeds")
         {
-            // Get the position based on the player's direction
-            Vector3Int position = GetPositionBasedOnDirection();
 
             // Check if the ground is plowed
             if (plowedPositions.Contains(position))
             {
-                // Get the Tilemap
-                Tilemap tilemap = GameManager.instance.tileManager.GetTilemap();
 
                 // Reference to Animated Tile
                 AnimatedTile animatedTile = GameManager.instance.tileManager.GetPlantingAnimatedTomatoTile();
@@ -159,7 +171,8 @@ public class Player : MonoBehaviour
                     }
 
                     // Start a coroutine to show animation of plant growth
-                    StartCoroutine(GrowTomato(tilemap, position, animationDuration));
+                    StartCoroutine(GrowTomato(tilemap,position,animationDuration));
+                    
                 }
             }
             else
@@ -191,11 +204,35 @@ public class Player : MonoBehaviour
         }
     }
 
+
+    private IEnumerator GrowTomato(Tilemap tilemap, Vector3Int position, float animationDuration)
+    {
+        // Wait for the animation to complete
+        yield return new WaitForSeconds(animationDuration);
+        setTomatoTile(tilemap,position);
+        
+    }
+
     private IEnumerator GrowWheat(Tilemap tilemap, Vector3Int position, float animationDuration)
     {
         // Wait for the animation to complete
         yield return new WaitForSeconds(animationDuration);
+        setWheatTile(tilemap,position);
+        
+    }
 
+    public void setWheatTile(Tilemap tilemap, Vector3Int position)
+    {
+        tilemap.SetTile(position, GameManager.instance.tileManager.GetWheatTile());
+    }
+
+    public void setTomatoTile(Tilemap tilemap, Vector3Int position)
+    {
+        tilemap.SetTile(position, GameManager.instance.tileManager.GetTomatoTile());
+    }
+
+     public void harvestWheat(Tilemap tilemap, Vector3Int position)
+    {
         // Convert the tilemap position to world position
         Vector3 worldPosition = tilemap.CellToWorld(position) + tilemap.tileAnchor;
 
@@ -223,17 +260,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    private IEnumerator GrowTomato(Tilemap tilemap, Vector3Int position, float animationDuration)
+    public void harvestTomato(Tilemap tilemap, Vector3Int position)
     {
-        // Wait for the animation to complete
-        yield return new WaitForSeconds(animationDuration);
-
         // Convert the tilemap position to world position
         Vector3 worldPosition = tilemap.CellToWorld(position) + tilemap.tileAnchor;
-
-        // Remove the animated tile from the tilemap
-        tilemap.SetTile(position, null);
-
         // Remove the position from the plowedPositions HashSet
         if (plowedPositions.Contains(position))
         {
