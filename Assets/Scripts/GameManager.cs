@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Player player;
 
     public GameObject plantItem; 
+    public InventoryManager inventoryManager;
 
     private void Awake()
     {
@@ -32,5 +33,11 @@ public class GameManager : MonoBehaviour
         uiManager = GetComponent<UIManager>();
 
         player = FindAnyObjectByType<Player>();
+
+        // Initialize the inventoryManager if it's not already assigned
+        if (inventoryManager == null)
+        {
+            inventoryManager = FindFirstObjectByType<InventoryManager>();
+        }
     }
 }

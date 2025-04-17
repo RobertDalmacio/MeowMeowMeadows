@@ -21,6 +21,11 @@ public class UIManager : MonoBehaviour {
     public Button openIventory;
     public Button closeButton;
 
+    public GameObject storePanel;
+    public Button openStore;
+    public Button closeStore;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() {
     }
@@ -47,6 +52,11 @@ public class UIManager : MonoBehaviour {
         if (settingsPanel != null) {
             settingsPanel.SetActive(false);
         }
+        if (storePanel != null) {
+            storePanel.SetActive(false);
+            openStore.onClick.AddListener(ToggleStore);
+            closeStore.onClick.AddListener(ToggleStore);
+        }
         if (volumeSlider != null && AudioManager.instance != null) {
            volumeSlider.value = AudioManager.instance.currentBGMVolume;
         }
@@ -61,6 +71,18 @@ public class UIManager : MonoBehaviour {
             }
             else{
                 inventoryPanel.SetActive(false);
+            }
+        }
+    }
+
+    public void ToggleStore(){
+        if(storePanel !=null)
+        {
+            if(!storePanel.activeSelf){
+                storePanel.SetActive(true);
+            }
+            else{
+                storePanel.SetActive(false);
             }
         }
     }

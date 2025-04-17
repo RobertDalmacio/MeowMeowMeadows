@@ -1,9 +1,10 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class InventoryManager : MonoBehaviour
 {
     public Dictionary<string, Inventory> inventoryByName = new Dictionary<string, Inventory>();
+    
     [Header("Backpack")]
     public Inventory backpack;
     public int backpackSlotCount;
@@ -21,11 +22,11 @@ public class InventoryManager : MonoBehaviour
         inventoryByName.Add("Toolbar", toolbar);
     }
 
-    public void Add(string inventoryName, item item)
+    public void Add(string inventoryName, item newItem)
     {
-        if(inventoryByName.ContainsKey(inventoryName))
+        if (inventoryByName.ContainsKey(inventoryName))
         {
-            inventoryByName[inventoryName].Add(item);
+            inventoryByName[inventoryName].Add(newItem);
         }
     }
 
