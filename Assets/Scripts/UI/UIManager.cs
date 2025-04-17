@@ -69,6 +69,7 @@ public class UIManager : MonoBehaviour {
     {
         if(inventoryUIByName.ContainsKey(inventoryName))
         {
+            
             inventoryUIByName[inventoryName].Refresh();
         }
     }

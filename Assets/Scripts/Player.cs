@@ -121,8 +121,17 @@ public class Player : MonoBehaviour
                     // Get the animation duration from the TileManager
                     float animationDuration = GameManager.instance.tileManager.GetAnimationDuration();
 
+                    highlightedSlot.inventory.Remove(highlightedSlot.slotID);
+                
+                    UIManager uiManager = FindFirstObjectByType<UIManager>();
+                    if (uiManager != null)  
+                    {
+                        uiManager.RefreshInventoryUI("Toolbar");
+                    }
+
                     // Start a coroutine to show animation of plant growth
                     StartCoroutine(GrowPlant(tilemap, position, animationDuration));
+
                 }
             }
             else

@@ -30,6 +30,7 @@ public class inventory_UI : MonoBehaviour
 
     public void Refresh()
     {
+        
         if (inventory == null)
         {
             return;
@@ -75,7 +76,7 @@ public class inventory_UI : MonoBehaviour
 
     public void SlotBeginDrag(Slot_UI slot) {
         if (slot != null) {
-            Debug.Log("Begin dragging " + slot.name);
+            //Debug.Log("Begin dragging " + slot.name);
             UIManager.draggedSlot=slot;
             UIManager.draggedIcon = Instantiate(UIManager.draggedSlot.itemIcon);
             UIManager.draggedIcon.raycastTarget=false;
@@ -89,14 +90,14 @@ public class inventory_UI : MonoBehaviour
     public void SlotDrag() {
         
         if (UIManager.draggedIcon != null) {
-            Debug.Log("Dragging");
+            //Debug.Log("Dragging");
             MoveToMousePosition(UIManager.draggedIcon.gameObject);
         }
     }
 
     public void SlotEndDrag() {
         if (UIManager.draggedIcon != null) {
-            Debug.Log("Done dragging");
+            //Debug.Log("Done dragging");
             Destroy(UIManager.draggedIcon.gameObject);
             UIManager.draggedIcon = null;
         }
@@ -104,7 +105,7 @@ public class inventory_UI : MonoBehaviour
 
     public void SlotDrop(Slot_UI slot) {
         if (slot != null && UIManager.draggedSlot != null) {
-            Debug.Log("Dropped " + UIManager.draggedSlot.name);
+            //Debug.Log("Dropped " + UIManager.draggedSlot.name);
             if (UIManager.dragSingle) {
                 UIManager.draggedSlot.inventory.MoveSlot(UIManager.draggedSlot.slotID, slot.slotID, slot.inventory);
             }

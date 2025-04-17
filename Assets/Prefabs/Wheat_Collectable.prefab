@@ -188,5 +188,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64687f0f2878443be8a952d700515266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: ce2e9bd5310a9486d8b9de9fa45c0542, type: 2}
+  data: {fileID: 11400000, guid: 402dec0299e2c48a693edc612c153143, type: 2}
   rb2d: {fileID: 0}
