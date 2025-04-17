@@ -8,27 +8,20 @@ using UnityEngine.Tilemaps;
 public class Player : MonoBehaviour
 {
     public InventoryManager inventory;
-
     public Button actionButton;
-
     public GameObject toolbar;
-
     public SpriteRenderer characterDirection;
 
     public Sprite leftLook;
     public Sprite leftLook2;
-
     public Sprite rightLook;
     public Sprite rightLook2;
-
     public Sprite frontLook;
     public Sprite frontLook2;
-    //public AnimationClip hoe_forward;
+
     public Animator animator;
 
     private HashSet<Vector3Int> plowedPositions = new HashSet<Vector3Int>(); // HashSet to keep track of plowed positions
-
-
 
     private void Awake()
     {
@@ -36,26 +29,19 @@ public class Player : MonoBehaviour
         actionButton.onClick.AddListener(InteractWithGround);
     }
 
-    private void Update()
-    {
-        ShowInteractablePosition();
-    }
     
+
     public void DropItem(item item)
     {
         Vector3 spawnLocation = transform.position;
-
-
         Vector3 spawnOffset = Random.insideUnitCircle * 1.25f;
-
-        item droppedItem = Instantiate(item, spawnLocation + spawnOffset,Quaternion.identity);
-
+        item droppedItem = Instantiate(item, spawnLocation + spawnOffset, Quaternion.identity);
         droppedItem.rb2d.AddForce(spawnOffset * 2f, ForceMode2D.Impulse);
     }
 
     public void DropItem(item item, int numDrop)
     {
-        for(int i=0; i< numDrop; i++)
+        for (int i = 0; i < numDrop; i++)
         {
             DropItem(item);
         }
@@ -68,7 +54,7 @@ public class Player : MonoBehaviour
         foreach (Slot_UI slot in toolbarSlots)
         {
             // Find slot that is highlighted
-            if (slot.highlight.activeSelf) 
+            if (slot.highlight.activeSelf)
             {
                 return slot;
             }
@@ -126,16 +112,15 @@ public class Player : MonoBehaviour
                     float animationDuration = GameManager.instance.tileManager.GetAnimationDuration();
 
                     highlightedSlot.inventory.Remove(highlightedSlot.slotID);
-                
+
                     UIManager uiManager = FindFirstObjectByType<UIManager>();
-                    if (uiManager != null)  
+                    if (uiManager != null)
                     {
                         uiManager.RefreshInventoryUI("Toolbar");
                     }
 
                     // Start a coroutine to show animation of plant growth
                     StartCoroutine(GrowPlant(tilemap, position, animationDuration));
-
                 }
             }
             else
@@ -150,10 +135,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    public IEnumerator PlowGround(Vector3Int position) {
+    public IEnumerator PlowGround(Vector3Int position)
+    {
         yield return new WaitForSeconds(0.9f);
+
         // Check if the position is interactable
-        if (GameManager.instance.tileManager.IsInteractable(position)) {
+        if (GameManager.instance.tileManager.IsInteractable(position))
+        {
             // Plow the ground
             GameManager.instance.tileManager.SetInteracted(position);
 
@@ -162,7 +150,6 @@ public class Player : MonoBehaviour
 
             Debug.Log("Plowed the ground at position: " + position);
         }
-        
     }
 
     private IEnumerator GrowPlant(Tilemap tilemap, Vector3Int position, float animationDuration)
@@ -200,42 +187,39 @@ public class Player : MonoBehaviour
     public void ShowInteractablePosition()
     {
         Vector3Int position = GetPositionBasedOnDirection();
-        GameManager.instance.tileManager.HighlightTile(position);
+        //GameManager.instance.tileManager.HighlightTile(position);
     }
 
-    private Vector3Int GetPositionBasedOnDirection() {
-        Debug.Log("character at position (x,y): " + transform.position.x + ", " + transform.position.y);
+    private Vector3Int GetPositionBasedOnDirection()
+    {
+        Debug.Log("Character at position (x, y): " + transform.position.x + ", " + transform.position.y);
 
-        int x = (int) (Mathf.Round(transform.position.x));
+        int x = (int)(Mathf.Round(transform.position.x));
         float xOffset = Mathf.Abs(Mathf.Abs(transform.position.x) - Mathf.Abs(x));
-        int y = (int) (Mathf.Round(transform.position.y));
+        int y = (int)(Mathf.Round(transform.position.y));
         float yOffset = Mathf.Abs(Mathf.Abs(transform.position.y) - Mathf.Abs(y));
-        Debug.Log("rounded position (x,y): " + x + ", " + y);
+        Debug.Log("Rounded position (x, y): " + x + ", " + y);
 
-        if (characterDirection.sprite == leftLook || characterDirection.sprite == leftLook2) {
+        if (characterDirection.sprite == leftLook || characterDirection.sprite == leftLook2)
+        {
             Debug.Log("Facing left");
             x += 1;
             y += 1;
         }
-        else if (characterDirection.sprite == rightLook || characterDirection.sprite == rightLook2) {
+        else if (characterDirection.sprite == rightLook || characterDirection.sprite == rightLook2)
+        {
             Debug.Log("Facing right");
             x += 2;
             y += 1;
         }
-        else if (characterDirection.sprite == frontLook || characterDirection.sprite == frontLook2) {
+        else if (characterDirection.sprite == frontLook || characterDirection.sprite == frontLook2)
+        {
             Debug.Log("Facing front");
             x += 2;
-            // if (xOffset >= 0.5f) {
-            //     x += 1;
-            // }
-            //y -= 1;
-
-            // if (yOffset >= 0.3f) {
-            //     y -= 1;
-            // }
-            
         }
-        else { // looking up
+        else
+        {
+            // Looking up
             Debug.Log("Facing up");
             x += 1;
             y += 2;
