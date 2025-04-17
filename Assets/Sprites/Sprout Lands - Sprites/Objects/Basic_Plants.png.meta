@@ -180,7 +180,7 @@ TextureImporter:
         width: 14
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,7 +202,7 @@ TextureImporter:
         width: 15
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,7 +224,7 @@ TextureImporter:
         width: 17
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,7 +246,7 @@ TextureImporter:
         width: 17
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -260,7 +260,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Plants_4
+      name: wheat_mature
       rect:
         serializedVersion: 2
         x: 64
@@ -268,7 +268,7 @@ TextureImporter:
         width: 17
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -282,7 +282,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Plants_5
+      name: wheat_collectable
       rect:
         serializedVersion: 2
         x: 80
@@ -290,7 +290,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -304,7 +304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Plants_6
+      name: tomato_collectable
       rect:
         serializedVersion: 2
         x: 81
@@ -312,7 +312,7 @@ TextureImporter:
         width: 14
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,7 +334,7 @@ TextureImporter:
         width: 14
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -356,7 +356,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -378,7 +378,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -400,7 +400,7 @@ TextureImporter:
         width: 15
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -414,7 +414,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basic_Plants_11
+      name: tomato_mature
       rect:
         serializedVersion: 2
         x: 64
@@ -422,7 +422,7 @@ TextureImporter:
         width: 16
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -439,7 +439,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9bd698ac854ae374fa34d903af70bbb3
     internalID: 0
     vertices: []
     indices: 
@@ -452,15 +452,15 @@ TextureImporter:
       Basic_Plants_0: 8474670595409141939
       Basic_Plants_1: -7396305697263286651
       Basic_Plants_10: 6330426110891526577
-      Basic_Plants_11: -8046388129001153825
       Basic_Plants_2: 3868332834043518974
       Basic_Plants_3: 6812107102740459891
-      Basic_Plants_4: -4968072622433853253
-      Basic_Plants_5: -8553166176874854604
-      Basic_Plants_6: 2018227706277626003
       Basic_Plants_7: -167575426429258219
       Basic_Plants_8: -1044968166336746788
       Basic_Plants_9: 934722249265953344
+      tomato_collectable: 2018227706277626003
+      tomato_mature: -8046388129001153825
+      wheat_collectable: -8553166176874854604
+      wheat_mature: -4968072622433853253
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

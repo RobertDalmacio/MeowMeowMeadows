@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     public Player player;
 
-    public GameObject plantItem; 
+    public GameObject[] plantItems;
     public InventoryManager inventoryManager;
 
     private void Awake()

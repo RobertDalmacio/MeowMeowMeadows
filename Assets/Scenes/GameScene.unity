@@ -1079,7 +1079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1087,7 +1087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1127,11 +1127,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 890.67847
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.6985
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2797,7 +2797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2805,7 +2805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2845,11 +2845,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 756.75446
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.6985
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Player Money: 0'
+  m_text: 'Money: 100$'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
   m_sharedMaterial: {fileID: -9214616803734668169, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
@@ -3352,7 +3352,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.6
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4147,10 +4147,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sell Tomato seed
+  m_text: Sell Tomatoes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
+  m_sharedMaterial: {fileID: -9214616803734668169, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10997,16 +10997,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -19, y: 12, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 75
@@ -11015,7 +11005,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 7723e6744be81ad4cba96f86e1f75aeb, type: 2}
   - m_RefCount: 90
     m_Data: {fileID: 11400000, guid: 81aad26586b405e44b4cafa9f308fbad, type: 2}
-  - m_RefCount: 76
+  - m_RefCount: 75
     m_Data: {fileID: 11400000, guid: 82a58d82aefadea4395fdb71e4440865, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 75
@@ -11024,10 +11014,10 @@ Tilemap:
     m_Data: {fileID: -641669564, guid: 79e86fcc2ca4e495f9890f551b95199c, type: 3}
   - m_RefCount: 90
     m_Data: {fileID: -627917849, guid: 79e86fcc2ca4e495f9890f551b95199c, type: 3}
-  - m_RefCount: 76
+  - m_RefCount: 75
     m_Data: {fileID: -1869969281, guid: 79e86fcc2ca4e495f9890f551b95199c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 316
+  - m_RefCount: 315
     m_Data:
       e00: 1
       e01: 0
@@ -11046,7 +11036,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 316
+  - m_RefCount: 315
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -11294,7 +11284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -11302,7 +11292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -11342,11 +11332,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 351.18198
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.6985
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12529,8 +12519,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -717.95, y: 413}
-  m_SizeDelta: {x: 114.05, y: 99.665}
+  m_AnchoredPosition: {x: -721.248, y: 413}
+  m_SizeDelta: {x: 107.454, y: 99.665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092819502
 MonoBehaviour:
@@ -12820,7 +12810,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -12831,7 +12821,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 652738281656750622, guid: 1f64b2c50bce829478b1a707439d12bc, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -13033,8 +13023,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Buy Tomato seed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
+  m_sharedMaterial: {fileID: -9214616803734668169, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13168,7 +13158,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -13179,7 +13169,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 652738281656750622, guid: 1f64b2c50bce829478b1a707439d12bc, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -13244,7 +13234,7 @@ GameObject:
   - component: {fileID: 1224176467}
   - component: {fileID: 1224176466}
   m_Layer: 5
-  m_Name: BuyTomato
+  m_Name: BuyTomatoSeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13289,7 +13279,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -13300,7 +13290,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 652738281656750622, guid: 1f64b2c50bce829478b1a707439d12bc, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -14072,7 +14062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -14080,7 +14070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -14120,11 +14110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 216.15198
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.6985
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14373,7 +14363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -14381,7 +14371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -14421,11 +14411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 621.82697
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.6985
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14575,7 +14565,7 @@ GameObject:
   - component: {fileID: 1292197268}
   - component: {fileID: 1292197267}
   m_Layer: 5
-  m_Name: BuyWheat
+  m_Name: BuyWheatSeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14620,7 +14610,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -14631,7 +14621,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 652738281656750622, guid: 1f64b2c50bce829478b1a707439d12bc, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -14763,7 +14753,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1001
+  m_SortingOrder: 1002
   m_TargetDisplay: 0
 --- !u!224 &1298457662
 RectTransform:
@@ -15506,10 +15496,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sell Wheat seed
+  m_text: 'Sell Wheat
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
+  m_sharedMaterial: {fileID: -9214616803734668169, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16401,8 +16393,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Buy Wheat seed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
+  m_sharedMaterial: {fileID: -9214616803734668169, guid: 056d38e15738b8f4598582a51123a7cf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17261,7 +17253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -17269,7 +17261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -17309,11 +17301,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 486.16898
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.6985
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -18934,7 +18926,9 @@ MonoBehaviour:
   item_Manager: {fileID: 1970401594}
   uiManager: {fileID: 0}
   player: {fileID: 0}
-  plantItem: {fileID: 1068369384173610582, guid: df5a4dda20eb74527898ec1e5ed4efcd, type: 3}
+  plantItems:
+  - {fileID: 2523170138137386254, guid: 2f882e7e3feb84101af0e13425e68392, type: 3}
+  - {fileID: 2523170138137386254, guid: 530608a291116744c907b977051c930d, type: 3}
   inventoryManager: {fileID: 0}
 --- !u!114 &1970401594
 MonoBehaviour:
@@ -18953,6 +18947,8 @@ MonoBehaviour:
   - {fileID: 671062389}
   - {fileID: 491123698}
   - {fileID: 9000358125519945944, guid: f7d9839e36bed44f5a0158eedba573c6, type: 3}
+  - {fileID: 9000358125519945944, guid: df5a4dda20eb74527898ec1e5ed4efcd, type: 3}
+  - {fileID: 9000358125519945944, guid: 86ba2a2acb4f97b4f82acde94fe3c55b, type: 3}
 --- !u!114 &1970401595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25366,7 +25362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.x
@@ -25374,7 +25370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_SizeDelta.x
@@ -25414,11 +25410,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 80.901474
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -61.6985
       objectReference: {fileID: 0}
     - target: {fileID: 2824070845017532369, guid: 1f80b5edd8c20470abe8158faed82f6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

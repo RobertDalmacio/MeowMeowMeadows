@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1370499856212608928}
   - component: {fileID: 2670626152310093012}
-  - component: {fileID: 823216692287813168}
+  - component: {fileID: 3368334127297546689}
+  - component: {fileID: 7966525050911832988}
+  - component: {fileID: 2734751912342792832}
   m_Layer: 0
   m_Name: Wheat_plant
   m_TagString: Untagged
@@ -88,7 +90,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &823216692287813168
+--- !u!95 &3368334127297546689
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -99,7 +101,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: dae8019bf22b143e59a00572a307518e, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -110,3 +112,33 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7966525050911832988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523170138137386254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad50f81b1d25c441943c37a89ba23f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Animator: {fileID: 3368334127297546689}
+  _Transitions: {fileID: 0}
+  _ActionOnDisable: 0
+--- !u!114 &2734751912342792832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2523170138137386254}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4820c8d1193a442a71bdfa83b93657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Animancer: {fileID: 0}
+  _Clip: {fileID: 7400000, guid: 9576f0a0168834730b72fe8df752659e, type: 2}
+  finished: 0
