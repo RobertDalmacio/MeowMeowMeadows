@@ -28,13 +28,17 @@ public class Player : MonoBehaviour
 
     private HashSet<Vector3Int> plowedPositions = new HashSet<Vector3Int>(); // HashSet to keep track of plowed positions
 
-    private Vector3Int positionTile;
 
 
     private void Awake()
     {
         inventory = GetComponent<InventoryManager>();
         actionButton.onClick.AddListener(InteractWithGround);
+    }
+
+    private void Update()
+    {
+        ShowInteractablePosition();
     }
     
     public void DropItem(item item)
@@ -196,13 +200,7 @@ public class Player : MonoBehaviour
     public void ShowInteractablePosition()
     {
         Vector3Int position = GetPositionBasedOnDirection();
-
-        if (positionTile != position && GameManager.instance.tileManager.IsInteractable(position))
-        {
-            GameManager.instance.tileManager.SetNonInteractable(positionTile);
-            positionTile = position;
-            GameManager.instance.tileManager.SetInteractable(positionTile);
-        }
+        GameManager.instance.tileManager.HighlightTile(position);
     }
 
     private Vector3Int GetPositionBasedOnDirection() {

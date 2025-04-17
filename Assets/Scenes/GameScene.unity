@@ -16969,8 +16969,8 @@ MonoBehaviour:
   interactableMap: {fileID: 613359762}
   interactableTile: {fileID: 11400000, guid: 4b82d5d9816ab79419f2334f1c7fffba, type: 2}
   interactedTile: {fileID: 11400000, guid: f8e3a3635e5e16b4c94e68a2760ccce6, type: 2}
-  darkerGrassTile: {fileID: 11400000, guid: 15243a9e28b9948a8853f64f0601b2a8, type: 2}
-  normalGrassTile: {fileID: 11400000, guid: 954c8b0ded5eec241aa73dcb379ae1d4, type: 2}
+  darkerGrassTile: {fileID: 11400000, guid: 863d54103fdd649d29c6699e1f18a430, type: 2}
+  normalGrassTile: {fileID: 11400000, guid: 0deb61959900429428e7e369f88c8272, type: 2}
   animationSpeed: 1
   plantingAnimatedTile: {fileID: 11400000, guid: 0e365d298b4f54545a84a037e1fdfec8, type: 2}
 --- !u!4 &1970401592
