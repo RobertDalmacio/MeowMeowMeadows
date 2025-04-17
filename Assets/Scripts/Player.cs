@@ -68,23 +68,24 @@ public class Player : MonoBehaviour
         if (plantedPositions.ContainsKey(position)) {
             Debug.Log("Planted position found at: " + position);
             if (plantedPositions[position] != null) {
-                GameObject plantedObject = plantedPositions[position];
-                
-                 Animator plantAnimator = plantedObject.GetComponent<Animator>();
-                if (plantAnimator != null){
-                    Debug.Log("isDone? " + plantAnimator.GetBool("Done"));
-                    // item newItem = new GameObject().AddComponent<item>();
-                    // if (plantedPositions[position].name.Contains("wheat")){
-                    //     newItem.SetItemData(GameManager.instance.item_Manager.GetItemByName("wheat_harvested").data);
-                    //     inventory.Add("Backpack", newItem);
-                    //     plantedPositions.Remove(position); 
-                    // }
-                    // else if(plantedPositions[position].name.Contains("tomato")){
-                    //     newItem.SetItemData(GameManager.instance.item_Manager.GetItemByName("tomato_harvested").data);
-                    //     inventory.Add("Backpack", newItem);
-                    //     plantedPositions.Remove(position); 
-                    // }
-                }
+                GameObject plantedObject = plantedPositions[position];            
+              
+                    item newItem = new GameObject().AddComponent<item>();
+                    if (plantedPositions[position].name.Contains("wheat")){
+                        newItem.SetItemData(GameManager.instance.item_Manager.GetItemByName("wheat_harvested").data);                       
+                    }
+                    else if(plantedPositions[position].name.Contains("tomato")){
+                        newItem.SetItemData(GameManager.instance.item_Manager.GetItemByName("tomato_harvested").data);
+                    }
+
+                    inventory.Add("Backpack", newItem);
+                    plantedPositions.Remove(position); 
+
+                    Tilemap tilemap = GameManager.instance.tileManager.GetTilemap();
+                    if (tilemap != null) {
+                        tilemap.SetTile(position, GameManager.instance.tileManager.interactableTile); // Replace the tile with an interactable tile
+                    }
+              
             }
         }
 
@@ -166,8 +167,7 @@ public class Player : MonoBehaviour
                         uiManager.RefreshInventoryUI("Toolbar");
                     }
                // Remove the position from the plowedPositions HashSet
-                if (plowedPositions.Contains(position))
-                {
+                if (plowedPositions.Contains(position)) {
                     plowedPositions.Remove(position);
                 }
 
@@ -178,22 +178,20 @@ public class Player : MonoBehaviour
         //tilemap.SetTile(position, null);
 
             GameObject plantItem = null;
-            // Reference to plant item from GameManager
             switch(seedType) {
                 case "wheat seeds":
-                    plantItem = GameManager.instance.plantItems[0]; // Wheat item
+                    plantItem = GameManager.instance.plantItems[0];
                     break;
                 case "tomato seeds":
-                    plantItem = GameManager.instance.plantItems[1]; // Tomato item
+                    plantItem = GameManager.instance.plantItems[1];
                     break;
                 default:
                     Debug.Log("Unknown seed type: " + seedType);
                     break;
             }
             if (plantItem != null) {
-                // Drop plant item at the world position
-                Instantiate(plantItem, worldPosition, Quaternion.identity);
-                plantedPositions.Add(position, plantItem); // Track the planted position
+                Instantiate(plantItem, worldPosition, Quaternion.identity); // Drop plant item at the world position
+                StartCoroutine(WaitForPlantGrow(position, plantItem, plantItem.GetComponent<PlantController>().clipLength)); // Start coroutine to wait for plant growth
             }
 
             // Replace the tile with an interactable tile from the GameManager
@@ -209,6 +207,13 @@ public class Player : MonoBehaviour
                 Debug.Log("Cannot plant here. The ground is not plowed.");
              }
             }
+    }
+
+    private IEnumerator WaitForPlantGrow(Vector3Int position, GameObject plantItem, float clipDuration) {
+        yield return new WaitForSeconds(clipDuration);
+        Debug.Log("Plant has finished growing");
+        plantedPositions.Add(position, plantItem);
+        plowedPositions.Remove(position);
     }
 
     private IEnumerator GrowPlant(string seedType, Tilemap tilemap, Vector3Int position, float animationDuration)
