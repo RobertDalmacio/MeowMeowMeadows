@@ -17,6 +17,7 @@ public class TileManager : MonoBehaviour
     public const string InteractableTag = "interactable";
     public const string InteractableVisibleTag = "Interactable_visible";
     public AnimatedTile plantingAnimatedTile;
+    public AnimatedTile plantingAnimatedTomatoTile;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -80,11 +81,25 @@ public class TileManager : MonoBehaviour
         return plantingAnimatedTile;
     }
 
+    public AnimatedTile GetPlantingAnimatedTomatoTile()
+    {
+        return plantingAnimatedTomatoTile;
+    }
+
     public float GetAnimationDuration()
     {
         if (plantingAnimatedTile != null && plantingAnimatedTile?.m_AnimatedSprites.Length > 0)
         {
             return plantingAnimatedTile.m_AnimatedSprites.Length / animationSpeed;
+        }
+        return 0f; // Default to 0 if no sprites are available
+    }
+
+    public float GetAnimationTomatoDuration()
+    {
+        if (plantingAnimatedTomatoTile != null && plantingAnimatedTomatoTile?.m_AnimatedSprites.Length > 0)
+        {
+            return plantingAnimatedTomatoTile.m_AnimatedSprites.Length / animationSpeed;
         }
         return 0f; // Default to 0 if no sprites are available
     }
