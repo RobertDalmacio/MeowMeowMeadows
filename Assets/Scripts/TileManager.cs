@@ -13,6 +13,7 @@ public class TileManager : MonoBehaviour
     [SerializeField] private Tile normalGrassTile;
 
     [SerializeField] private float animationSpeed = 1f;
+    [SerializeField] private float animationTomatoSpeed = 0.2f;
 
     public const string InteractableTag = "interactable";
     public const string InteractableVisibleTag = "Interactable_visible";
@@ -112,7 +113,7 @@ public class TileManager : MonoBehaviour
     {
         if (plantingAnimatedTomatoTile != null && plantingAnimatedTomatoTile?.m_AnimatedSprites.Length > 0)
         {
-            return plantingAnimatedTomatoTile.m_AnimatedSprites.Length / animationSpeed;
+            return plantingAnimatedTomatoTile.m_AnimatedSprites.Length / ((plantingAnimatedTomatoTile.m_MinSpeed + plantingAnimatedTomatoTile.m_MaxSpeed) / 2f);
         }
         return 0f; // Default to 0 if no sprites are available
     }
