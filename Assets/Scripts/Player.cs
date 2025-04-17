@@ -163,12 +163,24 @@ public class Player : MonoBehaviour
         // Remove the animated tile from the tilemap
         tilemap.SetTile(position, null);
 
+        // Remove the position from the plowedPositions HashSet
+        if (plowedPositions.Contains(position))
+        {
+            plowedPositions.Remove(position);
+        }
+
         // Reference to plant item from GameManager
         GameObject plantItem = GameManager.instance.plantItem;
         if (plantItem != null)
         {
             // Drop plant item at the world position
             Instantiate(plantItem, worldPosition, Quaternion.identity);
+        }
+
+        // Replace the tile with an interactable tile from the GameManager
+        if (GameManager.instance.tileManager != null)
+        {
+            GameManager.instance.tileManager.GetTilemap().SetTile(position, GameManager.instance.tileManager.interactableTile);
         }
     }
 

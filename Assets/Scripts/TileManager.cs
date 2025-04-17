@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 public class TileManager : MonoBehaviour
 {
     [SerializeField] private Tilemap interactableMap;
-    [SerializeField] private Tile interactableTile;
+    [SerializeField] public Tile interactableTile;
     [SerializeField] private Tile interactedTile;
 
     [SerializeField] private Tile darkerGrassTile;
