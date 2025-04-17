@@ -18911,6 +18911,7 @@ MonoBehaviour:
   normalGrassTile: {fileID: 11400000, guid: 0deb61959900429428e7e369f88c8272, type: 2}
   animationSpeed: 1
   plantingAnimatedTile: {fileID: 11400000, guid: 0e365d298b4f54545a84a037e1fdfec8, type: 2}
+  plantingAnimatedTomatoTile: {fileID: 11400000, guid: 9cb8af61332d8437d8b325ba31b5d4fd, type: 2}
 --- !u!4 &1970401592
 Transform:
   m_ObjectHideFlags: 0
@@ -18942,7 +18943,8 @@ MonoBehaviour:
   item_Manager: {fileID: 1970401594}
   uiManager: {fileID: 0}
   player: {fileID: 0}
-  plantItem: {fileID: 1068369384173610582, guid: df5a4dda20eb74527898ec1e5ed4efcd, type: 3}
+  wheatItem: {fileID: 1068369384173610582, guid: df5a4dda20eb74527898ec1e5ed4efcd, type: 3}
+  tomatoItem: {fileID: 6601399923447741370, guid: 18840299c535245f9ab91a2894b50f05, type: 3}
   inventoryManager: {fileID: 0}
 --- !u!114 &1970401594
 MonoBehaviour:

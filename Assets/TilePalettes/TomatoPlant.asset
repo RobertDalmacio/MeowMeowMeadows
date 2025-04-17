@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TomatoPlant
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -7396305697263286651, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
-  - {fileID: 3868332834043518974, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
-  - {fileID: 6812107102740459891, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
-  - {fileID: -4968072622433853253, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
+  - {fileID: -1044968166336746788, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
+  - {fileID: 934722249265953344, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
+  - {fileID: 6330426110891526577, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
+  - {fileID: -8046388129001153825, guid: fe885dd2f4c4e4d609f686c043078640, type: 3}
   m_MinSpeed: 1
   m_MaxSpeed: 1
   m_AnimationStartTime: 0
